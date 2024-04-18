@@ -3,6 +3,8 @@ package client.core;
 import client.model.login.LoginModel;
 import client.model.login.LoginModelManager;
 
+import java.rmi.RemoteException;
+
 public class ModelFactory {
 
     private final ClientFactory client;
@@ -14,7 +16,11 @@ public class ModelFactory {
 
     public LoginModel getLoginModel(){
        if (loginModel == null){
-           loginModel = new LoginModelManager(client.getClient());
+           try {
+               loginModel = new LoginModelManager(client.getLoginClient());
+           } catch (RemoteException e) {
+               throw new RuntimeException(e);
+           }
        }
        return loginModel;
     }
