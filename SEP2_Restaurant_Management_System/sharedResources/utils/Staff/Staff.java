@@ -1,6 +1,6 @@
 package sharedResources.utils.Staff;
 
-public class Staff {
+public abstract class Staff {
     protected String name;
     protected int id;
 
