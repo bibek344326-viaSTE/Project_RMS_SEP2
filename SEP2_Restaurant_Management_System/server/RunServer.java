@@ -1,7 +1,7 @@
 package server;
 
-import server.networking.ServerManager;
-import server.networking.login.LoginServerManager;
+import server.mediator.ServerManager;
+import server.mediator.login.LoginServerManager;
 import server.model.login.LoginModel;
 import server.model.login.LoginModelManager;
 import sharedResources.networking.serverInterfaces.LoginServer;

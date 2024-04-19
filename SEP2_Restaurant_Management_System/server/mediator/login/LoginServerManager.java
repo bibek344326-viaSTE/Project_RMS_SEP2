@@ -1,4 +1,4 @@
-package server.networking.login;
+package server.mediator.login;
 
 import server.model.login.LoginModel;
 import sharedResources.networking.serverInterfaces.LoginServer;
@@ -7,7 +7,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 public class LoginServerManager implements LoginServer {
-    private final LoginModel loginModel;
+    private LoginModel loginModel;
 
     public LoginServerManager(LoginModel loginModel) throws RemoteException {
         this.loginModel = loginModel;
