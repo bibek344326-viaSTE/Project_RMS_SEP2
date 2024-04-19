@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/Chef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/StaffMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Reservation/TestReservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/TestStaffMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_RMS_SEP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_RMS_SEP2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/StaffMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/StaffMember.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -35,14 +39,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/samko/Desktop/javafx-sdk-21.0.2/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
@@ -66,6 +73,7 @@
       <updated>1713465446686</updated>
       <workItem from="1713465448891" duration="270000" />
       <workItem from="1713465927837" duration="4257000" />
+      <workItem from="1713507258352" duration="7235000" />
     </task>
     <servers />
   </component>
