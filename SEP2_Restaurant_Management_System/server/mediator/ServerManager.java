@@ -1,4 +1,4 @@
-package server.networking;
+package server.mediator;
 
 import sharedResources.networking.serverInterfaces.LoginServer;
 import sharedResources.networking.serverInterfaces.Server;

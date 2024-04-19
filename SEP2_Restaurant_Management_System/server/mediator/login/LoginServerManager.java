@@ -1,4 +1,4 @@
-package server.networking.login;
+package server.mediator.login;
 
 import server.model.login.LoginModel;
 import sharedResources.networking.serverInterfaces.LoginServer;
