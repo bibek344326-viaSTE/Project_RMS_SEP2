@@ -63,4 +63,5 @@ public class TableList implements TableManagement {
         }
         return vacantTables;
     }
+
 }
