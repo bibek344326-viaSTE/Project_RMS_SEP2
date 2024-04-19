@@ -8,9 +8,15 @@ public class LoginViewModel {
 
     public LoginViewModel(ModelFactory modelFactory) {
         this.loginModel = modelFactory.getLoginModel();
+        // bind textarea over here
     }
 
     public void login(String hi) {
+        // change name of argument better option is to create User and send Request obj
         loginModel.login(hi);
+    }
+
+    public void signUp(String userName, String password) {
+        loginModel.signUp(userName , password);
     }
 }
