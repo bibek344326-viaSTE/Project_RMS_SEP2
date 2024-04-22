@@ -18,6 +18,9 @@ public class Table {
     public boolean isOccupied() {
         return isOccupied;
     }
+    public void setOccupied(boolean occupied) {
+        isOccupied = occupied;
+    }
 
     public int getCapacity() {
         return capacity;

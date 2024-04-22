@@ -16,8 +16,5 @@ public class LoginModelManager implements LoginModel {
         loginClient.login(hi);
     }
 
-    @Override
-    public void signUp(String userName, String password) {
-        loginClient.signUp(userName, password);
-    }
+
 }
