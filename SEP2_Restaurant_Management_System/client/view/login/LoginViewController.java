@@ -21,8 +21,5 @@ public class LoginViewController implements ViewController {
         loginViewModel.login("HI this is chana");
     }
 
-    @FXML
-    private void SignUpButtonClicked(ActionEvent actionEvent) {
-        loginViewModel.signUp("Rachana" , "password");
-    }
+
 }

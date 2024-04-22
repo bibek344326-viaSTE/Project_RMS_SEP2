@@ -2,6 +2,7 @@ package client.model.table;
 
 import sharedResources.utils.table.Table;
 
+import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 
@@ -41,5 +42,15 @@ public class TableListModelManager implements TableManagement {
     }
     public ArrayList<Table> getVacantTables(){
         return tableList.getVacantTables();
+    }
+
+    @Override
+    public void addListener(PropertyChangeListener listener) {
+        property.addPropertyChangeListener(listener);
+    }
+
+    @Override
+    public void removeListener(PropertyChangeListener listener) {
+        property.removePropertyChangeListener(listener);
     }
 }

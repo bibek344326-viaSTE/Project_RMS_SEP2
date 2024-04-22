@@ -2,6 +2,7 @@ package client.core;
 
 import client.model.login.LoginModel;
 import client.model.login.LoginModelManager;
+import client.model.table.TableManagement;
 
 import java.rmi.RemoteException;
 
@@ -24,4 +25,5 @@ public class ModelFactory {
        }
        return loginModel;
     }
+
 }

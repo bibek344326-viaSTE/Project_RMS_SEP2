@@ -2,6 +2,7 @@ package client.model.table;
 
 import sharedResources.utils.table.Table;
 
+import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 
 public class TableList implements TableManagement {
@@ -62,5 +63,15 @@ public class TableList implements TableManagement {
             }
         }
         return vacantTables;
+    }
+
+    @Override
+    public void addListener(PropertyChangeListener listener) {
+
+    }
+
+    @Override
+    public void removeListener(PropertyChangeListener listener) {
+
     }
 }

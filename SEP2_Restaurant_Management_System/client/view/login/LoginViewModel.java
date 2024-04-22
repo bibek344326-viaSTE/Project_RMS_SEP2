@@ -16,7 +16,5 @@ public class LoginViewModel {
         loginModel.login(hi);
     }
 
-    public void signUp(String userName, String password) {
-        loginModel.signUp(userName , password);
-    }
+
 }
