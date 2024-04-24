@@ -41,6 +41,11 @@ public class TableHandlerManager implements TableHandler {
     }
 
     @Override
+    public void reserveTable() {
+
+    }
+
+    @Override
     public void addListener(String eventName, PropertyChangeListener listener) {
         support.addPropertyChangeListener(eventName, listener);
     }

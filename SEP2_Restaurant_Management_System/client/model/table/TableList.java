@@ -5,7 +5,9 @@ import sharedResources.utils.table.Table;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 
-public class TableList implements TableManagement {
+// Server side
+
+public class TableList implements TableModel {
     private ArrayList<Table> tables;
 
     public TableList() {
