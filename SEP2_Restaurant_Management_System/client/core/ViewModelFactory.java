@@ -1,6 +1,6 @@
 package client.core;
 
-import client.model.table.TableManagement;
+import client.model.table.TableModel;
 import client.view.login.LoginViewModel;
 import client.view.table.TableViewModel;
 
@@ -9,7 +9,7 @@ public class ViewModelFactory {
     private final ModelFactory modelFactory;
     private LoginViewModel loginViewModel;
     private TableViewModel tableViewModel;
-    private TableManagement model;
+    private TableModel model;
 
 
     public ViewModelFactory(ModelFactory modelFactory) {

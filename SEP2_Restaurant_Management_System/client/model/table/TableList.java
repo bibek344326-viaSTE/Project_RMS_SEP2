@@ -5,7 +5,13 @@ import sharedResources.utils.table.Table;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 
-public class TableList implements TableManagement {
+import sharedResources.utils.table.Table;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
+
+public class TableList implements PropertyChangeListener {
     private ArrayList<Table> tables;
 
     public TableList() {
@@ -13,14 +19,12 @@ public class TableList implements TableManagement {
     }
 
     // Method to create a new table
-    @Override
     public void createTable(int tableNumber, int capacity) {
         Table newTable = new Table(tableNumber, capacity);
         tables.add(newTable);
     }
 
     // Method to delete a table
-    @Override
     public void deleteTable(int tableNumber) {
         for (int i = 0; i < tables.size(); i++) {
             if (tables.get(i).getTableNumber() == tableNumber) {
@@ -31,7 +35,6 @@ public class TableList implements TableManagement {
     }
 
     // Method to update the status of a table
-    @Override
     public void updateTable(int tableNumber, boolean isOccupied) {
         for (Table table : tables) {
             if (table.getTableNumber() == tableNumber) {
@@ -64,14 +67,25 @@ public class TableList implements TableManagement {
         }
         return vacantTables;
     }
-
     @Override
-    public void addListener(PropertyChangeListener listener) {
-
+    public String toString() {
+        return "TableList{" +
+                "tables=" + tables +
+                '}';
     }
-
     @Override
-    public void removeListener(PropertyChangeListener listener) {
+    public void propertyChange(PropertyChangeEvent evt) {
+        if (evt.getPropertyName().equals("isOccupied")) {
+            boolean newOccupied = (boolean) evt.getNewValue();
+            int tableNumber = ((Table) evt.getSource()).getTableNumber();
+
+            if (newOccupied) {
+                System.out.println("Table " + tableNumber + " has been occupied.");
+            } else {
+                System.out.println("Table " + tableNumber + " has been vacated.");
+            }
+
+        }
 
     }
 }
