@@ -1,9 +1,12 @@
 package client.view.table;
 
+import client.model.Reservation.ReservationModel;
 import client.model.table.TableModel;
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableView;
+import sharedResources.utils.Reservation.Reservation;
 import sharedResources.utils.table.Table;
 
 import java.beans.PropertyChangeEvent;
@@ -14,11 +17,14 @@ public class TableViewModel implements PropertyChangeListener {
     private ObservableList<Table> tableList;
     private TableModel model;
     private TableView<Table> tableView;
+    private ReservationModel reservationmodel;
+    private StringProperty errorProperty;
 
-    public TableViewModel(TableModel model) {
+    public TableViewModel(TableModel model,ReservationModel reservationmodel) {
         this.model = model;
         this.model.addListener(this);
         tableList = FXCollections.observableArrayList();
+        this.reservationmodel = reservationmodel;
         updateTableList();
 
     }
@@ -49,9 +55,9 @@ public class TableViewModel implements PropertyChangeListener {
 
             updateTableList();
 
-            System.out.println("Table " + selectedTable.getTableNumber() + " status updated.");
+            errorProperty.set("Table " + selectedTable.getTableNumber() + " status updated.");
         } else {
-            System.out.println("Please select a table to edit.");
+            errorProperty.set("Please select a table to edit.");
         }
     }
 
@@ -68,9 +74,9 @@ public class TableViewModel implements PropertyChangeListener {
             selectedTable.setOccupied(true); // Mark the table as occupied (reserved)
             model.updateTable(selectedTable.getTableNumber(), selectedTable.isOccupied()); // Update the table status
             updateTableList();
-            System.out.println("Table " + selectedTable.getTableNumber() + " reserved.");
+            errorProperty.set("Table " + selectedTable.getTableNumber() + " reserved.");
         } else {
-            System.out.println("Please select an available table to reserve ");
+            errorProperty.set("Please select an available table to reserve ");
         }
     }
 
@@ -80,9 +86,42 @@ public class TableViewModel implements PropertyChangeListener {
             selectedTable.setOccupied(false); // Mark the table as unoccupied (available)
             model.updateTable(selectedTable.getTableNumber(), selectedTable.isOccupied()); // Update the table status
             updateTableList();
-            System.out.println("Table " + selectedTable.getTableNumber() + " reservation cancelled.");
+            errorProperty.set("Table " + selectedTable.getTableNumber() + " reservation cancelled.");
         } else {
-            System.out.println("Please select an occupied table to cancel reservation ");
+            errorProperty.set("Please select an occupied table to cancel reservation ");
+        }
+    }
+    public void addReservation(int tableNumber) {
+        Reservation reservation = reservationmodel.findReservationByTable(tableNumber);
+        if (reservation != null) {
+            Table selectedTable = model.getTableByNumber(tableNumber);
+            if (selectedTable != null && !selectedTable.isOccupied()) {
+                selectedTable.setOccupied(true);
+                model.updateTable(selectedTable.getTableNumber(), selectedTable.isOccupied());
+                updateTableList();
+                errorProperty.set("Table " + selectedTable.getTableNumber() + " reserved.");
+            } else {
+                errorProperty.set("Table " + tableNumber + " is either occupied or does not exist.");
+            }
+        } else {
+            errorProperty.set("No reservation found for table " + tableNumber + ".");
+        }
+    }
+
+    public void removeReservation(int tableNumber) {
+        Reservation reservation = reservationmodel.findReservationByTable(tableNumber);
+        if (reservation != null) {
+            Table selectedTable = model.getTableByNumber(tableNumber);
+            if (selectedTable != null && selectedTable.isOccupied()) {
+                selectedTable.setOccupied(false);
+                model.updateTable(selectedTable.getTableNumber(), selectedTable.isOccupied());
+                updateTableList();
+                errorProperty.set("Table " + selectedTable.getTableNumber() + " reservation cancelled.");
+            } else {
+                errorProperty.set("Table " + tableNumber + " is either not occupied or does not exist.");
+            }
+        } else {
+            errorProperty.set("No reservation found for table " + tableNumber + ".");
         }
     }
 

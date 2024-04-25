@@ -45,6 +45,10 @@ public class TableListModelManager implements TableModel {
         return tableList.getNumberOfTables();
     }
 
+   @Override
+    public Table getTableByNumber(int tableNumber) {return tableList.getTableByNumber(tableNumber);}
+
+
     @Override
     public ArrayList<Table> getAllTables() {
         return tableList.getAllTables();
@@ -54,6 +58,7 @@ public class TableListModelManager implements TableModel {
     public ArrayList<Table> getVacantTables() {
         return tableList.getVacantTables();
     }
+
 
     @Override
     public void addListener(PropertyChangeListener listener) {

@@ -1,17 +1,11 @@
 package sharedResources.utils.Staff;
 
 import client.model.Reservation.ReservationList;
-import client.model.table.TableList;
 import sharedResources.utils.Customer.Customer;
 import sharedResources.utils.Reservation.Reservation;
 import sharedResources.utils.table.Table;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-
-
-
 
 public class StaffMember {
     private String name;
@@ -24,15 +18,15 @@ public class StaffMember {
         return name;
     }
 
-    public void makeReservation(ReservationList reservationList, Table table, LocalDateTime reservationTime) {
-        Reservation reservation = new Reservation(reservationTime, table);
-        reservation.reserveTable(reservationList, table);
+    public void makeReservation(ReservationList reservationList, Table table, LocalDateTime reservationTime, Customer customer) {
+        Reservation reservation = new Reservation(reservationTime, table, customer);
+        reservation.reserveTable(reservationList, table, customer);
     }
 
-    public void clearReservation(ReservationList reservationList, Table table) {
+    public void clearReservation(ReservationList reservationList, Table table, Customer customer) {
         Reservation reservation = reservationList.findReservationByTable(table.getTableNumber());
         if (reservation != null) {
-            reservation.clearReservation(reservationList, table);
+            reservation.clearReservation(reservationList, table, customer);
         } else {
             System.out.println("No reservation found for the specified table.");
         }

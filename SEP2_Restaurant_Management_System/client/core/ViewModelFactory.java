@@ -1,5 +1,6 @@
 package client.core;
 
+import client.model.Reservation.ReservationModel;
 import client.model.table.TableModel;
 import client.view.login.LoginViewModel;
 import client.view.table.TableViewModel;
@@ -10,6 +11,7 @@ public class ViewModelFactory {
     private LoginViewModel loginViewModel;
     private TableViewModel tableViewModel;
     private TableModel model;
+    private ReservationModel reservationmodel;
 
 
     public ViewModelFactory(ModelFactory modelFactory) {
@@ -24,7 +26,7 @@ public class ViewModelFactory {
     }
     public TableViewModel getTableViewModel() {
         if (tableViewModel  == null){
-            tableViewModel = new TableViewModel(model);
+            tableViewModel = new TableViewModel(model,reservationmodel);
         }
         return tableViewModel;
     }

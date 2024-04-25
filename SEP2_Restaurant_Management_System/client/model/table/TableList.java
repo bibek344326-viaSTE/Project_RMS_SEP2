@@ -33,6 +33,14 @@ public class TableList implements PropertyChangeListener {
             }
         }
     }
+    public Table getTableByNumber(int tableNumber) {
+        for (Table table : tables) {
+            if (table.getTableNumber() == tableNumber) {
+                return table;
+            }
+        }
+        return null; // Table not found
+    }
 
     // Method to update the status of a table
     public void updateTable(int tableNumber, boolean isOccupied) {
@@ -67,6 +75,7 @@ public class TableList implements PropertyChangeListener {
         }
         return vacantTables;
     }
+
     @Override
     public String toString() {
         return "TableList{" +

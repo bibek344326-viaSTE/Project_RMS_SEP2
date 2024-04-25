@@ -9,9 +9,15 @@ public class Customer {
         this.name = name;
     }
 
-    public Customer(String name) {
-        this.name = name;
+    public String getPhonenumber() {
+        return phonenumber;
+    }
+
+    public void setPhonenumber(String phonenumber) {
+        this.phonenumber = phonenumber;
     }
 
     private String name;
+    private String phonenumber;
+
 }
