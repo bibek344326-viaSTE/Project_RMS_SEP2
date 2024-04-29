@@ -1,6 +1,20 @@
 package sharedResources.utils.Customer;
 
+import sharedResources.utils.Reservation.Reservation;
+
 public class Customer {
+    private String name;
+    private Reservation reservation;
+
+    public Customer(String name, Reservation reservation) {
+        this.name = name;
+        this.reservation = reservation;
+    }
+
+    public Customer() {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -17,7 +31,7 @@ public class Customer {
         this.phonenumber = phonenumber;
     }
 
-    private String name;
+
     private String phonenumber;
 
 }

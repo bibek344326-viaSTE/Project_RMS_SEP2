@@ -1,7 +1,4 @@
 package sharedResources.utils.Reservation;
-
-
-
 import client.model.Reservation.ReservationList;
 import sharedResources.utils.Customer.Customer;
 import sharedResources.utils.table.Table;

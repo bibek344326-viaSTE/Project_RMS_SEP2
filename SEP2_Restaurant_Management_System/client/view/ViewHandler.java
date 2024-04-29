@@ -29,37 +29,34 @@ public class ViewHandler {
     }
 
     private void openLogin() {
-        if (loginScene == null){
+        if (loginScene == null) {
             try {
                 Parent root = loadFXML("./login/LoginView.fxml");
                 loginScene = new Scene(root);
-                stage.setTitle("Login");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-          stage.setScene(loginScene);
-            stage.show();
+
         }
+        stage.setTitle("Login");
+        stage.setScene(loginScene);
+        stage.show();
     }
 
-    public void openTableView(String tableView) {
-        try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("Table.fxml"));
-            Region root = loader.load();
+    public void openTableView() {
+        if (tableScene == null) {
+            try {
+                Parent root = loadFXML("./table/Table.fxml");
+                tableScene = new Scene(root);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
 
-            tableViewController = loader.getController();
-            tableViewController.init(this, viewModelFactory.getTableViewModel(), root);
-
-            tableScene.setRoot(root);
-            stage.setScene(tableScene);
-            stage.setTitle("Restaurant Management System");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+        stage.setTitle("tableView");
+        stage.setScene(tableScene);
+        stage.show();
     }
-
 
     private Parent loadFXML(String path) throws IOException {
         FXMLLoader loader = new FXMLLoader();

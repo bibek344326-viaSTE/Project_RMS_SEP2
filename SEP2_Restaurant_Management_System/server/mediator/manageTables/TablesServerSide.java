@@ -11,11 +11,13 @@ import java.util.ArrayList;
 
 public class TablesServerSide implements TableServer {
     private TableHandler tableHandler;
+
     public TablesServerSide(TableHandler tableHandler) throws RemoteException {
         this.tableHandler = tableHandler;
-        UnicastRemoteObject.exportObject(this,0);
+        UnicastRemoteObject.exportObject(this, 0);
 
     }
+
     @Override
     public ArrayList<Table> getTables() throws RemoteException {
         return tableHandler.getTables();
@@ -34,5 +36,13 @@ public class TablesServerSide implements TableServer {
     @Override
     public void deleteTable(Table table) throws RemoteException {
         tableHandler.deleteTable(table);
+    }
+
+    @Override
+    public boolean reserveTables(int numberOfTables) throws RemoteException {
+        for (int i = 0; i < numberOfTables; i++) {
+            tableHandler.reserveTable();
+        }
+        return true;
     }
 }

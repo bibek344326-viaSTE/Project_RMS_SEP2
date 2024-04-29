@@ -19,4 +19,5 @@ public class RemoteClientRMI {
         }
         return server;
     }
+
 }
