@@ -1,7 +1,7 @@
 package client.view.table;
 
-import client.model.table.TableManagement;
-import javafx.collections.FXCollections;
+import client.core.ModelFactory;
+import client.model.table.TableModel;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableView;
 import sharedResources.utils.table.Table;
@@ -12,14 +12,11 @@ import java.beans.PropertyChangeListener;
 public class TableViewModel implements PropertyChangeListener {
 
     private ObservableList<Table> tableList;
-    private TableManagement model;
+    private TableModel model;
     private TableView<Table> tableView;
 
-    public TableViewModel(TableManagement model) {
-        this.model = model;
-        this.model.addListener(this);
-        tableList = FXCollections.observableArrayList();
-        updateTableList();
+    public TableViewModel(ModelFactory modelFactory) {
+        this.model = modelFactory.getTableModel();
 
     }
     public ObservableList<Table> getTableList() {

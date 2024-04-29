@@ -12,8 +12,8 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class ServerManager  implements Server {
 
-
     private final LoginServer loginserver;
+
 
     public ServerManager(LoginServer loginServer) throws RemoteException {
         this.loginserver = loginServer;

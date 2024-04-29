@@ -13,4 +13,6 @@ public interface TableHandler extends Subject {
     ArrayList<Table> getTables();
     void updateTable(Table table, String newName, int tableSize);
     void deleteTable(Table table);
+
+    void reserveTable();
 }

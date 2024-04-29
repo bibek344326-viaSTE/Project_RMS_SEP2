@@ -15,5 +15,7 @@ public interface TableServer extends Remote {
     Request createTable(Table table) throws RemoteException;
 
     void deleteTable(Table table) throws RemoteException;
+
+    boolean reserveTables(int numberOfTables) throws RemoteException;
 }
 
