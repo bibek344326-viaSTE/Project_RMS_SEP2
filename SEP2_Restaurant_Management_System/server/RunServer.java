@@ -23,7 +23,7 @@ public class RunServer {
         server.startServer();
 
         TablesDAO tablesDAO = new TablesDAOManager();
-        tablesDAO.createTable(new Table(4, 10));
+       // tablesDAO.createTable(new Table(4, 10));
         ArrayList<Table> tables = tablesDAO.getTables();
         for (Table table : tables) {
             System.out.println("Table number: " + table.getTableNumber() + "       Table Capacity: " + table.getCapacity());
