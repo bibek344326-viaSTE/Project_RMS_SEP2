@@ -41,9 +41,9 @@
                                     <children>
                                         <TableView prefHeight="356.0" prefWidth="714.0">
                                             <columns>
-                                                <TableColumn prefWidth="154.39999103546143" text="Table Number" />
-                                                <TableColumn prefWidth="173.59999084472656" text="Capacity " />
-                                                <TableColumn prefWidth="160.0" text="Status" />
+                                                <TableColumn fx:id="tableNumberColumn" prefWidth="154.39999103546143" text="Table Number" />
+                                                <TableColumn fx:id="capacityColumn" prefWidth="173.59999084472656" text="Capacity " />
+                                                <TableColumn fx:id="statusColumn" prefWidth="160.0" text="Status" />
                                                 <TableColumn prefWidth="228.0" text="Reserved By (Customer Name)" />
                                             </columns>
                                         </TableView>

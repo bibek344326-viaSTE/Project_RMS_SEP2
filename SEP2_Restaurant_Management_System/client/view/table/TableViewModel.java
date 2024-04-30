@@ -23,6 +23,13 @@ public class TableViewModel implements PropertyChangeListener {
     private TableModel tablemodel;
     private ObjectProperty<SimpleTableViewModel> selectedTableProperty;
     private ReservationModel reservationmodel;
+
+
+
+    public StringProperty getErrorProperty() {
+        return errorLabel;
+    }
+
     private StringProperty errorLabel;
     private ViewState viewState;
 
@@ -47,6 +54,7 @@ public class TableViewModel implements PropertyChangeListener {
             tableList.add(new SimpleTableViewModel(tablemodel.getAllTables().get(i)));
         }
     }
+
 
     public void setSelected(SimpleTableViewModel table){
         if (table == null){

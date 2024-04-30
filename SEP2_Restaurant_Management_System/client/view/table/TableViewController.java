@@ -5,27 +5,29 @@ import client.view.ViewController;
 import client.view.ViewHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Region;
 import sharedResources.utils.table.Table;
+import javafx.scene.control.TableView.TableViewSelectionModel; // Import missing class
 
 public class TableViewController implements ViewController {
     @FXML
-    private TableView<Table> tableView;
+    private TableView<SimpleTableViewModel> tableView;
     @FXML
-    private TableColumn<Table, Integer> tableNumberColumn;
+    private TableColumn<SimpleTableViewModel, Integer> tableNumberColumn;
     @FXML
-    private TableColumn<Table, Boolean> capacityColumn;
+    private TableColumn<SimpleTableViewModel, Integer> capacityColumn;
     @FXML
-    private TableColumn<Table, Boolean> statusColumn;
+    private TableColumn<SimpleTableViewModel, Boolean> statusColumn;
     @FXML
-    private TableColumn<Table, String> reservedByColumn;
+    private TableColumn<SimpleTableViewModel, String> reservedByColumn;
     @FXML
     private Button clearSelectedTableButton;
     @FXML
     private Button addNewTableButton;
+    @FXML
+    private Label errorLabel; // Added missing import
     @FXML
     private Button editTableDetailsButton;
     @FXML
@@ -34,42 +36,37 @@ public class TableViewController implements ViewController {
     private TableViewModel tableViewModel;
     private Region root;
 
-
-    @Override
-    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
+    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler, Region root) {
         this.viewHandler = viewHandler;
         this.tableViewModel = viewModelFactory.getTableViewModel();
+        this.root = root;
+
+        tableView.setItems(tableViewModel.getTableList());
+        tableNumberColumn.setCellValueFactory(cellData -> cellData.getValue().getTableNumberProperty());
+        capacityColumn.setCellValueFactory(cellData -> cellData.getValue().getCapacityProperty());
+        statusColumn.setCellValueFactory(cellData -> cellData.getValue().getStatusProperty());
+        errorLabel.textProperty().bind(tableViewModel.getErrorProperty());
+
+        tableViewModel.setSelected(null);
+        tableViewModel.deselect();
+
+        // Selecting item
+        TableViewSelectionModel<SimpleTableViewModel> selectionModel = tableView.getSelectionModel();
+        selectionModel.selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
+            if (newSelection != null) {
+                tableViewModel.setSelected(selectionModel.getSelectedItem());
+            }
+        });
     }
-        /*tableView.setItems(tableViewModel.getTableList());
-        tableNumberColumn.setCellValueFactory(new PropertyValueFactory<>("tableNumber"));
-        capacityColumn.setCellValueFactory(new PropertyValueFactory<>("capacity"));
-        statusColumn.setCellValueFactory(new PropertyValueFactory<>("isOccupied"));
-        reservedByColumn.setCellValueFactory(new PropertyValueFactory<>("tableName"));*/
 
     @FXML
-    private void clearSelectedTableButton() {
+    private void clearSelectedTableButton(ActionEvent event) { // Corrected method signature
         tableView.getSelectionModel().clearSelection();
     }
 
     @FXML
-    private void addNewTableButton() {
+    private void addNewTableButton(ActionEvent event) { // Corrected method signature
         tableViewModel.addNewTable();
     }
-
-    @FXML
-    private void deleteTableButton() {
-        Table selectedTable = tableView.getSelectionModel().getSelectedItem();
-        if (selectedTable != null) {
-            tableViewModel.deleteTable();
-        }
-    }
-
-    public void updateTableDetailsButton(ActionEvent actionEvent) {
-        Table selectedTable = tableView.getSelectionModel().getSelectedItem();
-        if (selectedTable != null) {
-            tableViewModel.updateTableDetails();
-        }
-    }
-
 
 }
