@@ -1,5 +1,6 @@
 package client.model.table;
 
+import client.mediator.table.TableClient;
 import sharedResources.utils.table.Table;
 
 import java.beans.PropertyChangeListener;
@@ -10,7 +11,7 @@ public class TableListModelManager implements TableModel {
     private final TableList tableList;
     private final PropertyChangeSupport property;
 
-    public TableListModelManager() {
+    public TableListModelManager(TableClient tableClient) {
         property = new PropertyChangeSupport(this);
         tableList = new TableList();
         createDummyData();

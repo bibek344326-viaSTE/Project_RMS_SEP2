@@ -4,6 +4,8 @@ import client.mediator.Client;
 import client.mediator.ClientHandler;
 import client.mediator.login.LoginClient;
 import client.mediator.login.LoginClientManager;
+import client.mediator.reservation.ReservationClient;
+import client.mediator.reservation.ReservationClientManager;
 import client.mediator.table.TableClient;
 import client.mediator.table.TableClientManager;
 
@@ -13,6 +15,7 @@ public class ClientFactory {
 
     private LoginClient loginClient;
     private TableClient tableClient;
+    private ReservationClient reservationClient;
 
     public LoginClient getLoginClient() throws RemoteException {
         if(loginClient == null){
@@ -27,4 +30,11 @@ public class ClientFactory {
         }
         return tableClient;
     }
+
+   /* public ReservationClient getReservationClient() {
+        if(reservationClient == null){
+            reservationClient= new ReservationClientManager();
+        }
+        return reservationClient;
+    }*/
 }

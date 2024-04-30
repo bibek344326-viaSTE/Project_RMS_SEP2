@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class ReservationListModelManager implements ReservationModel {
     private final ReservationList reservationList;
     private final PropertyChangeSupport property;
+    private ReservationListModelManager reservationListModelManager;
 
     public ReservationListModelManager() {
         property = new PropertyChangeSupport(this);
@@ -59,5 +60,10 @@ public class ReservationListModelManager implements ReservationModel {
     @Override
     public void removeListener(PropertyChangeListener listener) {
         property.removePropertyChangeListener(listener);
+    }
+
+    @Override
+    public void loginAsCustomer(String hi) {
+        reservationListModelManager.loginAsCustomer(hi);
     }
 }

@@ -17,5 +17,4 @@ public interface TableModel extends UnnamedPropertyChangeSubject {
 
     ArrayList<Table> getVacantTables();
 
-    Table getTableByNumber(int tableNumber);
-}
+    Table getTableByNumber(int tableNumber);}

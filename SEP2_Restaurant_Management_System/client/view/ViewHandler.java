@@ -5,7 +5,6 @@ import client.view.table.TableViewController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,7 +13,11 @@ public class ViewHandler {
     private final ViewModelFactory viewModelFactory;
     private Stage stage;
     private Scene loginScene;
-    private Scene tableScene;
+    private Scene customerScene;
+    private Scene staffScene;
+    private Scene kitchenScene;
+
+
     private TableViewController tableViewController;
 
 
@@ -31,7 +34,7 @@ public class ViewHandler {
     private void openLogin() {
         if (loginScene == null) {
             try {
-                Parent root = loadFXML("./login/LoginView.fxml");
+                Parent root = loadFXML("./login/RestaurantLoginView.fxml");
                 loginScene = new Scene(root);
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -43,20 +46,54 @@ public class ViewHandler {
         stage.show();
     }
 
-    public void openTableView() {
-        if (tableScene == null) {
+
+    public void openCustomerView() {
+        if (customerScene == null) {
             try {
-                Parent root = loadFXML("./table/Table.fxml");
-                tableScene = new Scene(root);
+                Parent root = loadFXML("./login/CustomerTableNumberView.fxml");
+                customerScene = new Scene(root);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        stage.setTitle("Login To Customer View");
+        stage.setScene(customerScene);
+        stage.show();
+
+
+    }
+
+    public void openStaffView() {
+        if (staffScene == null) {
+            try {
+                Parent root = loadFXML("./login/StaffMemberLogin.fxml");
+                staffScene = new Scene(root);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
 
         }
-        stage.setTitle("tableView");
-        stage.setScene(tableScene);
+        stage.setTitle("Login To Staff Member View");
+        stage.setScene(staffScene);
         stage.show();
     }
+
+
+    public void openKitchenStaffView() {
+        if (kitchenScene == null) {
+            try {
+                Parent root = loadFXML("./login/KitchenStaffLogin.fxml");
+                kitchenScene = new Scene(root);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+        stage.setTitle("Login To kitchen staff View");
+        stage.setScene(kitchenScene);
+        stage.show();
+    }
+
 
     private Parent loadFXML(String path) throws IOException {
         FXMLLoader loader = new FXMLLoader();

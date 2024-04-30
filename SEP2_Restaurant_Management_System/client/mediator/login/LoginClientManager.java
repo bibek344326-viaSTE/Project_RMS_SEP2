@@ -2,7 +2,6 @@ package client.mediator.login;
 
 import client.mediator.RemoteClientRMI;
 import sharedResources.networking.serverInterfaces.LoginServer;
-
 import java.rmi.RemoteException;
 
 public class LoginClientManager implements LoginClient {
@@ -25,14 +24,4 @@ public class LoginClientManager implements LoginClient {
         }
     }
 
-    @Override
-    public void signUp(String userName, String password) {
-        String signUpSucess = null;
-        try {
-            signUpSucess = server.signUp(userName, password);
-        } catch (RemoteException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println("signupOK"  + signUpSucess);
-    }
 }
