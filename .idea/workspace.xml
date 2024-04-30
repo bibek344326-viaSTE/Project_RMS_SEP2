@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/RunServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/RunServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_RMS_SEP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_RMS_SEP2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/DatabaseConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Database__connection__and__queries__for__tables__reservation__customers",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Bibek/OneDrive/Desktop/First Sem/Via 1st sem SEP/ProjectCode",
+    "last_opened_file_path": "C:/Users/samos/Desktop/postgresql-42.7.3.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,7 +66,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.RunServer">
+  <component name="RunManager" selected="Application.RunClient">
     <configuration name="RunClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.RunClient" />
       <module name="Project_RMS_SEP2" />
@@ -94,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RunServer" />
         <item itemvalue="Application.RunClient" />
+        <item itemvalue="Application.RunServer" />
       </list>
     </recent_temporary>
   </component>
@@ -125,6 +126,7 @@
       <workItem from="1714035324414" duration="1996000" />
       <workItem from="1714123667899" duration="6206000" />
       <workItem from="1714158571571" duration="1679000" />
+      <workItem from="1714466206393" duration="236000" />
     </task>
     <servers />
   </component>
