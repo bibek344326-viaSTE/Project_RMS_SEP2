@@ -17,35 +17,56 @@ public class TableModelManager implements TableModel {
         this.tableList = new TableList();
         this.property = new PropertyChangeSupport(this);
         this.tableClient = tableClient;
+        createDummyData();
     }
 
 
-    public void createTable(int tableNumber, int capacity) {
+
         // TODO : change all the method from table list to table server and move table list to server section
+        private void createDummyData() {
+            createTable(1, 4);
+            createTable(2, 2);
+            createTable(3, 6);
+        }
+
+    @Override
+    public void createTable(int tableNumber, int capacity) {
         tableList.createTable(tableNumber, capacity);
         property.firePropertyChange("TableCreated", null, tableNumber);
     }
 
+    @Override
     public void deleteTable(int tableNumber) {
         tableList.deleteTable(tableNumber);
         property.firePropertyChange("TableDeleted", tableNumber, null);
     }
 
+    @Override
     public void updateTable(int tableNumber, boolean isOccupied) {
         tableList.updateTable(tableNumber, isOccupied);
         property.firePropertyChange("TableUpdated", tableNumber, isOccupied);
     }
 
+    @Override
     public int getNumberOfTables() {
         return tableList.getNumberOfTables();
     }
 
+    @Override
+    public Table getTableByNumber(int tableNumber) {return tableList.getTableByNumber(tableNumber);}
+
+
+    @Override
     public ArrayList<Table> getAllTables() {
         return tableList.getAllTables();
     }
-    public ArrayList<Table> getVacantTables(){
+
+    @Override
+    public ArrayList<Table> getVacantTables() {
         return tableList.getVacantTables();
     }
+
+
 
     @Override
     public void addListener(PropertyChangeListener listener) {
@@ -56,4 +77,6 @@ public class TableModelManager implements TableModel {
     public void removeListener(PropertyChangeListener listener) {
         property.removePropertyChangeListener(listener);
     }
+
+
 }

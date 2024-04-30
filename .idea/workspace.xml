@@ -6,8 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_RMS_SEP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_RMS_SEP2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/core/ViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/core/ViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/Reservation/ReservationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/Reservation/ReservationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/Reservation/ReservationManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/Reservation/ReservationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableModelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Reservation/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Reservation/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Reservation/TestReservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/StaffMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/StaffMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/TestStaffMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/table/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,27 +55,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.RunClient.executor": "Run",
-    "Application.RunServer.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Database__connection__and__queries__for__tables__reservation__customers",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/samos/Desktop/postgresql-42.7.3.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.30393487",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RunClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RunServer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Database__connection__and__queries__for__tables__reservation__customers&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/samos/Desktop/postgresql-42.7.3.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.30393487&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.RunClient">
     <configuration name="RunClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.RunClient" />
@@ -127,6 +137,7 @@
       <workItem from="1714123667899" duration="6206000" />
       <workItem from="1714158571571" duration="1679000" />
       <workItem from="1714466206393" duration="236000" />
+      <workItem from="1714467003303" duration="2351000" />
     </task>
     <servers />
   </component>
