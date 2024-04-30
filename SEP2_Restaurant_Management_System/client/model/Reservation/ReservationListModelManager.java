@@ -1,5 +1,6 @@
 package client.model.Reservation;
 
+import client.mediator.reservation.ReservationClient;
 import sharedResources.utils.Reservation.Reservation;
 
 import java.beans.PropertyChangeListener;
@@ -11,7 +12,7 @@ public class ReservationListModelManager implements ReservationModel {
     private final PropertyChangeSupport property;
     private ReservationListModelManager reservationListModelManager;
 
-    public ReservationListModelManager() {
+    public ReservationListModelManager(ReservationClient reservationClient) {
         property = new PropertyChangeSupport(this);
         reservationList = new ReservationList();
         createDummyData();

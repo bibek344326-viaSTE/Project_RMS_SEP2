@@ -2,7 +2,7 @@ package client.core;
 
 import client.model.Reservation.ReservationModel;
 import client.model.table.TableModel;
-import client.view.login.CustomerViewModel;
+import client.view.customer.CustomerViewModel;
 import client.view.login.LoginViewModel;
 import client.view.table.TableViewModel;
 
@@ -11,7 +11,7 @@ public class ViewModelFactory {
     private final ModelFactory modelFactory;
     private LoginViewModel loginViewModel;
     private TableViewModel tableViewModel;
-    private CustomerViewModel CustomerViewModel;
+    private CustomerViewModel customerViewModel;
     private TableModel model;
     private ReservationModel reservationmodel;
 

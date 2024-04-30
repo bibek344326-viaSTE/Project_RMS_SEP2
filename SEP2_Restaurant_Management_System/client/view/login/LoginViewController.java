@@ -30,12 +30,12 @@ public class LoginViewController implements ViewController {
 
     @FXML
     private void staffMemberButtonPressed() {
-        viewHandler.openStaffView();
+        viewHandler.openStaffLogInView();
     }
 
     @FXML
     private void kitchenStaffButtonPressed() {
-        viewHandler.openKitchenStaffView();
+        viewHandler.openKitchenLoginView();
 
     }
 }
