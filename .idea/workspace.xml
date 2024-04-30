@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="" />
+    <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/ViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/ViewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/login/LoginViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/login/LoginViewController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,6 +132,7 @@
       <workItem from="1714478674226" duration="2117000" />
       <workItem from="1714491667846" duration="747000" />
       <workItem from="1714492442964" duration="2000" />
+      <workItem from="1714493014433" duration="298000" />
     </task>
     <servers />
   </component>

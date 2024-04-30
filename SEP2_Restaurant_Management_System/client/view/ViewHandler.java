@@ -16,6 +16,7 @@ public class ViewHandler {
     private Scene customerScene;
     private Scene staffScene;
     private Scene kitchenScene;
+    private Scene tableScene;
 
 
     private TableViewController tableViewController;
@@ -93,6 +94,21 @@ public class ViewHandler {
         stage.setScene(kitchenScene);
         stage.show();
     }
+    public void openTableView() {
+        if (tableScene == null) {
+            try {
+                Parent root = loadFXML("./table/Table.fxml");
+                tableScene = new Scene(root);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+        stage.setTitle("Table View");
+        stage.setScene(tableScene);
+        stage.show();
+    }
+
 
 
     private Parent loadFXML(String path) throws IOException {
