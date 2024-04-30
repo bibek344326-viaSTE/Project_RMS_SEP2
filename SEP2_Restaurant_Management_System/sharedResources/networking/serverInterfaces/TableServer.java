@@ -1,5 +1,7 @@
 package sharedResources.networking.serverInterfaces;
 
+import client.model.Reservation.ReservationList;
+import sharedResources.utils.Customer.Customer;
 import sharedResources.utils.Request;
 import sharedResources.utils.table.Table;
 
@@ -17,5 +19,9 @@ public interface TableServer extends Remote {
     void deleteTable(Table table) throws RemoteException;
 
     boolean reserveTables(int numberOfTables) throws RemoteException;
+
+    boolean clearReservation(ReservationList reservationList, Table table, Customer customer);
+
+    boolean reserveTable(ReservationList reservationList, Table table, Customer customer);
 }
 

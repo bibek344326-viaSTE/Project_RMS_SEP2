@@ -1,7 +1,9 @@
 package server.mediator.manageTables;
 
+import client.model.Reservation.ReservationList;
 import server.model.tables.TableHandler;
 import sharedResources.networking.serverInterfaces.TableServer;
+import sharedResources.utils.Customer.Customer;
 import sharedResources.utils.Request;
 import sharedResources.utils.table.Table;
 
@@ -44,5 +46,15 @@ public class TablesServerSide implements TableServer {
             tableHandler.reserveTable();
         }
         return true;
+    }
+
+    @Override
+    public boolean clearReservation(ReservationList reservationList, Table table, Customer customer) {
+        return false;
+    }
+
+    @Override
+    public boolean reserveTable(ReservationList reservationList, Table table, Customer customer) {
+        return false;
     }
 }
