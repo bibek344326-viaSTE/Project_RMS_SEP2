@@ -1,9 +1,17 @@
 package client.view.table;
 
 import client.core.ModelFactory;
+import client.core.ViewState;
+import client.model.Reservation.ReservationModel;
 import client.model.table.TableModel;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableView;
+import sharedResources.utils.Reservation.Reservation;
 import sharedResources.utils.table.Table;
 
 import java.beans.PropertyChangeEvent;
@@ -11,75 +19,141 @@ import java.beans.PropertyChangeListener;
 
 public class TableViewModel implements PropertyChangeListener {
 
-    private ObservableList<Table> tableList;
-    private TableModel model;
-    private TableView<Table> tableView;
+    private ObservableList<SimpleTableViewModel> tableList;
+    private TableModel tablemodel;
+    private ObjectProperty<SimpleTableViewModel> selectedTableProperty;
+    private ReservationModel reservationmodel;
+    private StringProperty errorLabel;
+    private ViewState viewState;
 
-    public TableViewModel(ModelFactory modelFactory) {
-        this.model = modelFactory.getTableModel();
+    public TableViewModel(ModelFactory modelFactory, ViewState viewState) {
+        this.tablemodel = modelFactory.getTableModel();
+        this.reservationmodel = modelFactory.getReservationModel();
+        tableList = FXCollections.observableArrayList();
+        this.selectedTableProperty = new SimpleObjectProperty<>();
+        this.errorLabel = new SimpleStringProperty();
+        tablemodel.addListener(this);
+        reservationmodel.addListener(this);
+        this.viewState = viewState;
+        updateTableList();
 
     }
-    public ObservableList<Table> getTableList() {
+    public ObservableList<SimpleTableViewModel> getTableList() {
         return tableList;
     }
-
-    private void updateTableList() {
+    public void updateTableList(){
         tableList.clear();
-        tableList.addAll(model.getAllTables());
+        for(int i = 0; i < tablemodel.getAllTables().size(); i++){
+            tableList.add(new SimpleTableViewModel(tablemodel.getAllTables().get(i)));
+        }
     }
+
+    public void setSelected(SimpleTableViewModel table){
+        if (table == null){
+            viewState.setTablenumber(0);
+            viewState.setCapacity(0);
+            viewState.setStatus(false);
+        }
+        else{
+            this.selectedTableProperty.set(table);
+            viewState.setTablenumber(selectedTableProperty.get().getTableNumberProperty().get());
+            viewState.setCapacity(selectedTableProperty.get().getCapacityProperty().get());
+            viewState.setStatus(false);
+        }
+    }
+
+    public void deselect(){
+        setSelected(null);
+//    viewState.setTitle(null);
+//    viewState.setState(null);
+//    viewState.setRemove(false);
+    }
+
 
     public void addNewTable() {
         int nextTableNumber = tableList.size() + 1;
         int capacity = 6;
-        model.createTable(nextTableNumber, capacity); // Create a new table
+        tablemodel.createTable(nextTableNumber, capacity); // Create a new table
         updateTableList();
     }
 
     public void updateTableDetails() {
-        int selectedIndex = tableView.getSelectionModel().getSelectedIndex();
-        if (selectedIndex != -1) {
-            Table selectedTable = tableList.get(selectedIndex);
-
-
-            boolean newOccupiedStatus = !selectedTable.isOccupied();
-            model.updateTable(selectedTable.getTableNumber(), newOccupiedStatus); // Update the table status in the model
-
-            updateTableList();
-
-            System.out.println("Table " + selectedTable.getTableNumber() + " status updated.");
+        SimpleTableViewModel selectedTable = selectedTableProperty.get();
+        if (selectedTable != null) {
+            int tableIndex = tableList.indexOf(selectedTable);
+            if (tableIndex != -1) {
+                boolean newOccupiedStatus = !selectedTable.getStatusProperty().get();
+                tablemodel.updateTable(selectedTable.getTableNumberProperty().get(), newOccupiedStatus); // Update the table status in the model
+                updateTableList();
+                errorLabel.set("Table " + selectedTable.getTableNumberProperty().get() + " status updated.");
+            } else {
+                errorLabel.set("Selected table not found in the list.");
+            }
         } else {
-            System.out.println("Please select a table to edit.");
+            errorLabel.set("Please select a table to edit.");
         }
     }
 
     public void deleteTable() {
-        Table selectedTable = tableList.get(tableView.getSelectionModel().getSelectedIndex());
+        SimpleTableViewModel selectedTable = selectedTableProperty.get();
         if (selectedTable != null) {
-            model.deleteTable(selectedTable.getTableNumber()); // Delete the selected table
+            tablemodel.deleteTable(selectedTable.getTableNumberProperty().get()); // Delete the selected table
             updateTableList();
         }
     }
+
     public void occupyTable() {
-        Table selectedTable = tableView.getSelectionModel().getSelectedItem();
-        if (selectedTable != null && !selectedTable.isOccupied()) {
-            selectedTable.setOccupied(true); // Mark the table as occupied (reserved)
-            model.updateTable(selectedTable.getTableNumber(), selectedTable.isOccupied()); // Update the table status
+        SimpleTableViewModel selectedTable = selectedTableProperty.get();
+        if (selectedTable != null && !selectedTable.getStatusProperty().get()) {
+            tablemodel.updateTable(selectedTable.getTableNumberProperty().get(), true); // Mark the table as occupied (reserved)
             updateTableList();
-            System.out.println("Table " + selectedTable.getTableNumber() + " reserved.");
+            errorLabel.set("Table " + selectedTable.getTableNumberProperty().get() + " reserved.");
         } else {
-            System.out.println("Please select an available table to reserve ");
+            errorLabel.set("Please select an available table to reserve ");
         }
     }
 
     public void vacateTable() {
-        Table selectedTable = tableView.getSelectionModel().getSelectedItem();
-        if (selectedTable != null && selectedTable.isOccupied()) {
-            selectedTable.setOccupied(false); // Mark the table as unoccupied (available)
-            model.updateTable(selectedTable.getTableNumber(), selectedTable.isOccupied()); // Update the table status
+        SimpleTableViewModel selectedTable = selectedTableProperty.get();
+        if (selectedTable != null && selectedTable.getStatusProperty().get()) {
+            tablemodel.updateTable(selectedTable.getTableNumberProperty().get(), false); // Mark the table as unoccupied (available)
             updateTableList();
-            System.out.println("Table " + selectedTable.getTableNumber() + " reservation cancelled.");
+            errorLabel.set("Table " + selectedTable.getTableNumberProperty().get() + " reservation cancelled.");
         } else {
-            System.out.println("Please select an occupied table to cancel reservation ");
+            errorLabel.set("Please select an occupied table to cancel reservation ");
+        }
+    }
+    public void addReservation(int tableNumber) {
+        Reservation reservation = reservationmodel.findReservationByTable(tableNumber);
+        if (reservation != null) {
+            Table selectedTable = tablemodel.getTableByNumber(tableNumber);
+            if (selectedTable != null && !selectedTable.isOccupied()) {
+                selectedTable.setOccupied(true);
+                tablemodel.updateTable(selectedTable.getTableNumber(), selectedTable.isOccupied());
+                updateTableList();
+                errorLabel.set("Table " + selectedTable.getTableNumber() + " reserved.");
+            } else {
+                errorLabel.set("Table " + tableNumber + " is either occupied or does not exist.");
+            }
+        } else {
+            errorLabel.set("No reservation found for table " + tableNumber + ".");
+        }
+    }
+
+    public void removeReservation(int tableNumber) {
+        Reservation reservation = reservationmodel.findReservationByTable(tableNumber);
+        if (reservation != null) {
+            Table selectedTable = tablemodel.getTableByNumber(tableNumber);
+            if (selectedTable != null && selectedTable.isOccupied()) {
+                selectedTable.setOccupied(false);
+                tablemodel.updateTable(selectedTable.getTableNumber(), selectedTable.isOccupied());
+                updateTableList();
+                errorLabel.set("Table " + selectedTable.getTableNumber() + " reservation cancelled.");
+            } else {
+                errorLabel.set("Table " + tableNumber + " is either not occupied or does not exist.");
+            }
+        } else {
+            errorLabel.set("No reservation found for table " + tableNumber + ".");
         }
     }
 

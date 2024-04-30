@@ -10,11 +10,13 @@ public class ViewModelFactory {
     private LoginViewModel loginViewModel;
     private TableViewModel tableViewModel;
     private TableModel model;
+    private ViewState viewState;
 
 
 
     public ViewModelFactory(ModelFactory modelFactory) {
         this.modelFactory = modelFactory;
+        this.viewState = new ViewState();
     }
 
     public LoginViewModel getLogInViewModel() {
@@ -25,7 +27,7 @@ public class ViewModelFactory {
     }
     public TableViewModel getTableViewModel() {
         if (tableViewModel  == null){
-            tableViewModel = new TableViewModel(modelFactory);
+            tableViewModel = new TableViewModel(modelFactory, viewState);
         }
         return tableViewModel;
     }

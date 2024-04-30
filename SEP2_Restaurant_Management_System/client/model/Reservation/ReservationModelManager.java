@@ -1,18 +1,23 @@
 package client.model.Reservation;
 
+import client.mediator.table.TableClient;
 import sharedResources.utils.Reservation.Reservation;
-
+import client.mediator.table.TableClient;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 
+
 public class ReservationModelManager implements ReservationModel {
     private final ReservationList reservationList;
     private final PropertyChangeSupport property;
+    private final TableClient tableClient;
 
-    public ReservationModelManager() {
+
+    public ReservationModelManager(TableClient tableClient) {
         property = new PropertyChangeSupport(this);
         reservationList = new ReservationList();
+        this.tableClient = tableClient;
         createDummyData();
     }
 

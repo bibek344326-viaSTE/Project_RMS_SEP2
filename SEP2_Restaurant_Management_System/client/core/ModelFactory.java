@@ -1,5 +1,7 @@
 package client.core;
 
+import client.model.Reservation.ReservationModel;
+import client.model.Reservation.ReservationModelManager;
 import client.model.login.LoginModel;
 import client.model.login.LoginModelManager;
 import client.model.table.TableModel;
@@ -11,7 +13,8 @@ public class ModelFactory {
 
     private final ClientFactory client;
     private LoginModel  loginModel;
-    private TableModel tableManagementModel;
+    private TableModel tablemodel;
+    private ReservationModel reservationmodel;
 
     public ModelFactory (ClientFactory client) {
         this.client = client;
@@ -29,13 +32,23 @@ public class ModelFactory {
     }
 
     public TableModel getTableModel() {
-        if (tableManagementModel == null){
+        if (tablemodel == null){
             try {
-                tableManagementModel = new TableModelManager(client.getTableClient());
+                tablemodel = new TableModelManager(client.getTableClient());
             } catch (RemoteException e) {
                 throw new RuntimeException(e);
             }
         }
-        return tableManagementModel;
+        return tablemodel;
+    }
+    public ReservationModel getReservationModel() {
+        if (reservationmodel == null){
+            try {
+                reservationmodel = new ReservationModelManager(client.getTableClient());
+            } catch (RemoteException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return reservationmodel;
     }
 }
