@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/table/TableClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/table/TableClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/table/TableClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/table/TableClientManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/manageTables/TablesServerSide.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/manageTables/TablesServerSide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/networking/serverInterfaces/TableServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/networking/serverInterfaces/TableServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_RMS_SEP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_RMS_SEP2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,27 +44,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RunClient.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RunServer.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Database__connection__and__queries__for__tables__reservation__customers&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/samos/Desktop/bangokar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.30393487&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.RunClient.executor": "Run",
+    "Application.RunServer.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Database__connection__and__queries__for__tables__reservation__customers",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/samko/Desktop/postgresql-42.7.3.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.30393487",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.RunClient">
     <configuration name="RunClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.RunClient" />
@@ -132,6 +129,7 @@
       <workItem from="1714467003303" duration="5564000" />
       <workItem from="1714478448881" duration="170000" />
       <workItem from="1714478674226" duration="2117000" />
+      <workItem from="1714491667846" duration="747000" />
     </task>
     <servers />
   </component>
