@@ -29,7 +29,7 @@ public class TablesDAOManager implements TablesDAO {
     @Override
     public void createTable(int tableNumber, int tableCapacity) throws SQLException {
         // Assuming table is not occupied by default when creating
-        createTable(new Table(tableNumber, tableCapacity, false));
+        createTable(new Table(tableNumber, tableCapacity));
     }
 
     @Override
@@ -91,8 +91,8 @@ public class TablesDAOManager implements TablesDAO {
         while (resultSet.next()) {
             int tableNumber = resultSet.getInt("table_number");
             int capacity = resultSet.getInt("table_capacity");
-            boolean isOccupied = resultSet.getBoolean("is_occupied");
-            Table table = new Table(tableNumber, capacity, isOccupied);
+            //boolean isOccupied = resultSet.getBoolean("is_occupied");
+            Table table = new Table(tableNumber, capacity);
             tables.add(table);
         }
         return tables;
@@ -112,7 +112,7 @@ public class TablesDAOManager implements TablesDAO {
                 int tableCapacity = resultSet.getInt("table_capacity");
                 boolean isOccupied = resultSet.getBoolean("is_occupied");
 
-                return new Table(tableNum, tableCapacity, isOccupied);
+                return new Table(tableNum, tableCapacity);
             } else {
                 // Table not found
                 return null;

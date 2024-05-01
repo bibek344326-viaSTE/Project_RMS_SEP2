@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/customer/CustomerDAOManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/customer/CustomersDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/reservations/ReservationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/reservations/ReservationDAOManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/createUser/CreateUserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/createUser/CreateUserDAOManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/login/LoginDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/login/LoginDAOManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/tables/TablesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/tables/TablesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/RunServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/RunServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/customer/CustomerDAOManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/customer/CustomerDAOManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/tables/TablesDAOManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/tables/TablesDAOManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Customer/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Reservation/TestReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Reservation/TestReservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/TestStaffMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/TestStaffMember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/table/Table.java" afterDir="false" />
@@ -141,7 +135,7 @@
       <workItem from="1714423500060" duration="186000" />
       <workItem from="1714469650671" duration="1327000" />
       <workItem from="1714548266570" duration="2116000" />
-      <workItem from="1714575576608" duration="4263000" />
+      <workItem from="1714575576608" duration="5035000" />
     </task>
     <servers />
   </component>

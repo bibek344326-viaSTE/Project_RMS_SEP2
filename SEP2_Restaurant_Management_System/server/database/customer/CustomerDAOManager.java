@@ -41,7 +41,7 @@ public class CustomerDAOManager implements CustomersDAO{
                     "INSERT INTO customer (name, phoneNumber) VALUES (?, ?)");
 
             preparedStatement.setString(1, customer.getName());
-            //preparedStatement.setString(2, customer.getPhoneNumber());
+            preparedStatement.setString(2, customer.getPhoneNumber());
             preparedStatement.executeUpdate();
 
             System.out.println("Customer added successfully.");

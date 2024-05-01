@@ -11,8 +11,8 @@ public class TestReservation {
         ReservationList reservationList = new ReservationList();
 
         // Create some tables
-        Table table1 = new Table(1, 4, isOccupied); // Table number 1 with capacity 4
-        Table table2 = new Table(2, 6, isOccupied); // Table number 2 with capacity 6
+        Table table1 = new Table(1, 4); // Table number 1 with capacity 4
+        Table table2 = new Table(2, 6); // Table number 2 with capacity 6
 
         // Create reservations
         LocalDateTime reservationTime1 = LocalDateTime.now().plusHours(1); // 1 hour from now

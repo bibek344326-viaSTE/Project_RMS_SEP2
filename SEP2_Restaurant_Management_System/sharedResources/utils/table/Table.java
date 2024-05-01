@@ -5,7 +5,7 @@ public class Table {
     private boolean isOccupied;
     private int capacity; // New variable to track the maximum capacity of the table
 
-    public Table(int tableNumber, int capacity, boolean isOccupied) {
+    public Table(int tableNumber, int capacity) {
         this.tableNumber = tableNumber;
         this.capacity = capacity;
         this.isOccupied = false;

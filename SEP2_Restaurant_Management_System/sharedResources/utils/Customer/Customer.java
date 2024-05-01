@@ -14,4 +14,8 @@ public class Customer {
     }
 
     private String name;
+
+    public String getPhoneNumber() {
+        return null;
+    }
 }
