@@ -29,7 +29,7 @@
             </children>
         </VBox>
         <ComboBox layoutX="241.0" layoutY="167.0" prefHeight="34.0" prefWidth="149.0" />
-        <Button layoutX="173.0" layoutY="288.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" text="Proceed">
+        <Button layoutX="142.0" layoutY="291.0" mnemonicParsing="false" onAction="#proceedToMenuItems" prefHeight="44.0" prefWidth="212.0" text="Proceed To Menu">
             <font>
                 <Font size="18.0" />
             </font>

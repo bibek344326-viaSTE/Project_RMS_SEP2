@@ -31,4 +31,8 @@ public class StaffViewController implements ViewController {
 
     public void onComboBoxSelection(ActionEvent actionEvent) {
     }
+
+    public void logInAsStaff() {
+        viewHandler.openStaffMemberView();
+    }
 }

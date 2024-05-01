@@ -4,7 +4,6 @@ import client.core.ViewModelFactory;
 import client.view.ViewController;
 import client.view.ViewHandler;
 import javafx.fxml.FXML;
-import javafx.scene.layout.Region;
 
 public class LoginViewController implements ViewController {
     @FXML
@@ -12,7 +11,7 @@ public class LoginViewController implements ViewController {
     private ViewHandler viewHandler;
 
     @Override
-    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler, Region root) {
+    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
         this.loginViewModel = viewModelFactory.getLogInViewModel();
         this.viewHandler = viewHandler;
 
@@ -31,12 +30,12 @@ public class LoginViewController implements ViewController {
 
     @FXML
     private void staffMemberButtonPressed() {
-        viewHandler.openStaffView();
+        viewHandler.openStaffLogInView();
     }
 
     @FXML
     private void kitchenStaffButtonPressed() {
-        viewHandler.openTableView();
+        viewHandler.openKitchenLoginView();
 
     }
 }

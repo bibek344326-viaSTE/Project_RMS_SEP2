@@ -1,11 +1,6 @@
 package client.view.login;
 import client.core.ModelFactory;
 import client.model.login.LoginModel;
-import javafx.fxml.FXML;
-import sharedResources.utils.Staff.Chef;
-import sharedResources.utils.Staff.StaffMember;
-
-import java.awt.*;
 
 public class LoginViewModel {
 

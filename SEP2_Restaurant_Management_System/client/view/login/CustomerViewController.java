@@ -7,7 +7,6 @@ import client.view.customer.CustomerViewModel;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
-import javafx.scene.layout.Region;
 import sharedResources.utils.Customer.Customer;
 
 public class CustomerViewController implements ViewController {
@@ -33,7 +32,7 @@ public class CustomerViewController implements ViewController {
 
 
     @Override
-    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler, Region root) {
+    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
         this.viewModelFactory = viewModelFactory;
         this.viewHandler = viewHandler;
     }

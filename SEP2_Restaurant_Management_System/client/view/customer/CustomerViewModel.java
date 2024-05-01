@@ -1,18 +1,31 @@
 package client.view.customer;
 
+import client.core.ModelFactory;
 import client.model.Reservation.ReservationModel;
 import sharedResources.utils.Customer.Customer;
-import sharedResources.utils.Reservation.Reservation;
-
 
 public class CustomerViewModel {
-    private ReservationModel reservationModel;
 
-    public void init(ReservationModel reservationModel) {
-        this.reservationModel =reservationModel;
+    private final ReservationModel reservationModel;
+
+    public CustomerViewModel(ModelFactory modelFactory) {
+        this.reservationModel = modelFactory.getReservationModel();
+        // bind textarea over here
     }
 
-    public void clearTableForCustomer(Customer customer) {
+    public void loginAsCustomer(String tableView) {
+        // change name of argument better option is to create User and send Request obj
+        reservationModel.loginAsCustomer(tableView);
+    }
+
+    public void clearTableForCustomer(Customer selectedCustomer) {
+
+    }
+
+
+
+
+   /* public void clearTableForCustomer(Customer customer) {
         // Find the reservation for the given customer
         Reservation reservation = findReservationByCustomer(customer);
         if (reservation != null) {
@@ -34,5 +47,5 @@ public class CustomerViewModel {
             }
         }
         return null; // Return null if no reservation is found
-    }
+    }*/
 }
