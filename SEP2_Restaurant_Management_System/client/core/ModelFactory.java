@@ -1,15 +1,15 @@
 package client.core;
 
-import client.model.Reservation.ReservationListModelManager;
 import client.model.Reservation.ReservationModel;
+import client.model.Reservation.ReservationModelManager;
 import client.model.kitchen.KitchenModel;
 import client.model.kitchen.KitchenModelManager;
 import client.model.login.LoginModel;
 import client.model.login.LoginModelManager;
 import client.model.staff.StaffModel;
 import client.model.staff.StaffModelManager;
-import client.model.table.TableListModelManager;
 import client.model.table.TableModel;
+import client.model.table.TableModelManager;
 
 import java.rmi.RemoteException;
 
@@ -40,7 +40,7 @@ public class ModelFactory {
     public TableModel getTableModel() {
         if (tableManagementModel == null) {
             try {
-                tableManagementModel = new TableListModelManager(client.getTableClient());
+                tableManagementModel = new TableModelManager(client.getTableClient());
             } catch (RemoteException e) {
                 throw new RuntimeException(e);
             }
@@ -51,7 +51,7 @@ public class ModelFactory {
     public ReservationModel getReservationModel() {
         if (reservationModel == null) {
             try {
-                reservationModel = new ReservationListModelManager(client.getReservationClient());
+                reservationModel = new ReservationModelManager(client.getReservationClient());
             } catch (RemoteException e) {
                 throw new RuntimeException(e);
             }

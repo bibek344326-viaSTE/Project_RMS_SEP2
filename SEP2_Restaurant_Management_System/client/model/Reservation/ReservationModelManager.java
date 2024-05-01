@@ -1,8 +1,9 @@
 package client.model.Reservation;
 
+import client.mediator.reservation.ReservationClient;
 import client.mediator.table.TableClient;
 import sharedResources.utils.Reservation.Reservation;
-import client.mediator.table.TableClient;
+
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
@@ -11,13 +12,12 @@ import java.util.ArrayList;
 public class ReservationModelManager implements ReservationModel {
     private final ReservationList reservationList;
     private final PropertyChangeSupport property;
-    private final TableClient tableClient;
 
+    private ReservationModelManager reservationModelManager;
 
-    public ReservationModelManager(TableClient tableClient) {
+    public ReservationModelManager(ReservationClient reservationClient) {
         property = new PropertyChangeSupport(this);
         reservationList = new ReservationList();
-        this.tableClient = tableClient;
         createDummyData();
     }
 
@@ -64,5 +64,9 @@ public class ReservationModelManager implements ReservationModel {
     @Override
     public void removeListener(PropertyChangeListener listener) {
         property.removePropertyChangeListener(listener);
+    }
+    @Override
+    public void loginAsCustomer(String hi) {
+        reservationModelManager.loginAsCustomer(hi);
     }
 }

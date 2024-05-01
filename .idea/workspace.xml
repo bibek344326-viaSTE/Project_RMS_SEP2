@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/core/ClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/core/ClientFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/core/ModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/core/ModelFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/Reservation/ReservationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/Reservation/ReservationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/Reservation/ReservationModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/Reservation/ReservationModelManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.RunClient">
+  <component name="RunManager" selected="Application.RunServer">
     <configuration name="RunClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.RunClient" />
       <module name="Project_RMS_SEP2" />
@@ -94,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RunClient" />
         <item itemvalue="Application.RunServer" />
+        <item itemvalue="Application.RunClient" />
       </list>
     </recent_temporary>
   </component>
@@ -135,6 +136,7 @@
       <workItem from="1714493926200" duration="1804000" />
       <workItem from="1714547329159" duration="323000" />
       <workItem from="1714547882973" duration="225000" />
+      <workItem from="1714548174984" duration="605000" />
     </task>
     <servers />
   </component>

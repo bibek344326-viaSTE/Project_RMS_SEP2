@@ -19,4 +19,5 @@ public interface ReservationModel {
     void addListener(PropertyChangeListener listener);
 
     void removeListener(PropertyChangeListener listener);
+    void loginAsCustomer(String hi);
 }
