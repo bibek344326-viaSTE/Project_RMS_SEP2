@@ -15,4 +15,14 @@ public interface TablesDAO {
     ArrayList<Table> getTables() throws SQLException;
 
     Table getTable(String tableNumber) throws SQLException;
+
+    void createTable(int tableNumber, int tableCapacity) throws SQLException;
+
+    void deleteTable(int tableNumber) throws SQLException;
+
+    void updateTable(int tableNumber, int tableCapacity) throws SQLException;
+
+    ArrayList<Table> getOccupiedTables() throws SQLException;
+
+    ArrayList<Table> getVacantTables() throws SQLException;
 }

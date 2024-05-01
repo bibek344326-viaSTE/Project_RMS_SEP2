@@ -17,7 +17,7 @@ public class TableList implements TableModel {
     // Method to create a new table
     @Override
     public void createTable(int tableNumber, int capacity) {
-        Table newTable = new Table(tableNumber, capacity);
+        Table newTable = new Table(tableNumber, capacity, isOccupied);
         tables.add(newTable);
     }
 

@@ -12,7 +12,7 @@ public class TestStaffMember {
         ReservationList reservationList = new ReservationList();
 
         // Create a table
-        Table table1 = new Table(1, 4); // Table number 1 with capacity 4
+        Table table1 = new Table(1, 4, isOccupied); // Table number 1 with capacity 4
 
         // Create a staff member
         StaffMember staffMember = new StaffMember("John");

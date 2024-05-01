@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/customer/CustomerDAOManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/customer/CustomersDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/reservations/ReservationDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/reservations/ReservationDAOManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/RunServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/RunServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/table/TableList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/createUser/CreateUserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/createUser/CreateUserDAOManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/login/LoginDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/login/LoginDAOManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/tables/TablesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/tables/TablesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/tables/TablesDAOManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/tables/TablesDAOManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Reservation/TestReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Reservation/TestReservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/TestStaffMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/Staff/TestStaffMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/table/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,27 +57,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.RunClient.executor": "Run",
-    "Application.RunServer.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Database__connection__and__queries__for__tables__reservation__customers",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Bibek/OneDrive/Desktop/First Sem/Via 1st sem SEP/ProjectCode",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.30393487",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RunClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RunServer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;table__reservation__customer__DB&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bibek/OneDrive/Desktop/First Sem/Via 1st sem SEP/ProjectCode&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.30393487&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.RunServer">
     <configuration name="RunClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.RunClient" />
@@ -125,6 +138,10 @@
       <workItem from="1714035324414" duration="1996000" />
       <workItem from="1714123667899" duration="6206000" />
       <workItem from="1714158571571" duration="1679000" />
+      <workItem from="1714423500060" duration="186000" />
+      <workItem from="1714469650671" duration="1327000" />
+      <workItem from="1714548266570" duration="2116000" />
+      <workItem from="1714575576608" duration="4263000" />
     </task>
     <servers />
   </component>
