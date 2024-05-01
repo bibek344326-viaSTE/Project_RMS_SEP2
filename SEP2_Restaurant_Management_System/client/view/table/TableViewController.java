@@ -34,12 +34,11 @@ public class TableViewController implements ViewController {
     private Button deleteTableButton;
     private ViewHandler viewHandler;
     private TableViewModel tableViewModel;
-    private Region root;
 
-    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler, Region root) {
+
+    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
         this.viewHandler = viewHandler;
         this.tableViewModel = viewModelFactory.getTableViewModel();
-        this.root = root;
 
         tableView.setItems(tableViewModel.getTableList());
         tableNumberColumn.setCellValueFactory(cellData -> cellData.getValue().getTableNumberProperty());

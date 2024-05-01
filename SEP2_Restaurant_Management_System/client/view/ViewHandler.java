@@ -147,7 +147,7 @@ public class ViewHandler {
         Parent root = loader.load();
 
         ViewController controller = loader.getController();
-        controller.init(viewModelFactory, this);
+        controller.init(viewModelFactory, this,Region root);
         return root;
     }
 }
