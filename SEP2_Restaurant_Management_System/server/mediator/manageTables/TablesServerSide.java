@@ -47,14 +47,5 @@ public class TablesServerSide implements TableServer {
         }
         return true;
     }
-
-    @Override
-    public boolean clearReservation(ReservationList reservationList, Table table, Customer customer) {
-        return false;
-    }
-
-    @Override
-    public boolean reserveTable(ReservationList reservationList, Table table, Customer customer) {
-        return false;
-    }
 }
+

@@ -20,8 +20,6 @@ public interface TableServer extends Remote {
 
     boolean reserveTables(int numberOfTables) throws RemoteException;
 
-    boolean clearReservation(ReservationList reservationList, Table table, Customer customer);
 
-    boolean reserveTable(ReservationList reservationList, Table table, Customer customer);
 }
 

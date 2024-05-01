@@ -6,6 +6,4 @@ import sharedResources.utils.table.Table;
 
 public interface TableClient {
     void reserveTables(int numberOfTables);
-    void reserveTable(ReservationList reservationList, Table table, Customer customer);
-    void clearReservation(ReservationList reservationList, Table table, Customer customer);
 }
