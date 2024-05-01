@@ -5,10 +5,12 @@ import sharedResources.utils.Reservation.Reservation;
 public class Customer {
     private String name;
     private Reservation reservation;
+    private String phonenumber;
 
-    public Customer(String name, Reservation reservation) {
+    public Customer(String name, Reservation reservation,String phonenumber) {
         this.name = name;
         this.reservation = reservation;
+        this.phonenumber = phonenumber;
     }
 
     public String getName() {
@@ -28,6 +30,6 @@ public class Customer {
     }
 
 
-    private String phonenumber;
+
 
 }
