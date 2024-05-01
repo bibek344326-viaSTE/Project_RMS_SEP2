@@ -7,7 +7,7 @@ import javafx.event.ActionEvent;
 
 public class KitchenStaffViewController implements ViewController {
     private ViewHandler viewHandler;
-    private ViewModelFactory  viewModelFactory;
+    private ViewModelFactory viewModelFactory;
 
 
     @Override
@@ -17,6 +17,6 @@ public class KitchenStaffViewController implements ViewController {
     }
 
     public void LogInAsKitchenStaff() {
-        viewHandler.openKitchenView();
+        viewHandler.openTableView();
     }
 }

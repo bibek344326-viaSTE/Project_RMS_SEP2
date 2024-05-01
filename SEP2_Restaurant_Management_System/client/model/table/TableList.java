@@ -75,6 +75,7 @@ public class TableList implements PropertyChangeListener {
         }
         return vacantTables;
     }
+    public void add(Table table){this.tables.add(table);}
 
     @Override
     public String toString() {

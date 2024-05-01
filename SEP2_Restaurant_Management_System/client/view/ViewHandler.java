@@ -19,7 +19,7 @@ public class ViewHandler {
     private Scene menuScene;
     private Scene staffMemberScene;
     private Scene kitchenScene;
-
+    private Scene tableScene;
 
 
     private TableViewController tableViewController;
@@ -34,6 +34,7 @@ public class ViewHandler {
         openLogin();
 
     }
+
 
     private void openLogin() {
         if (loginScene == null) {
@@ -97,6 +98,7 @@ public class ViewHandler {
         stage.setScene(kitchenLoginScene);
         stage.show();
     }
+
     public void openMenuItemsView() {
         if (menuScene == null) {
             try {
@@ -111,10 +113,11 @@ public class ViewHandler {
         stage.setScene(menuScene);
         stage.show();
     }
+
     public void openStaffMemberView() {
         if (staffMemberScene == null) {
             try {
-                Parent root = loadFXML("./staff/StaffCustomerView.fxml");
+                Parent root = loadFXML("./table/Table.fxml");
                 staffMemberScene = new Scene(root);
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -149,5 +152,16 @@ public class ViewHandler {
         ViewController controller = loader.getController();
         controller.init(viewModelFactory, this);
         return root;
+    }
+
+    public void openTableView() {
+        if (tableScene == null) {
+            try {
+                Parent root = loadFXML("./table/Table.fxml");
+                tableScene = new Scene(root);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 }

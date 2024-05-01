@@ -73,8 +73,8 @@
         <DatePicker layoutX="533.0" layoutY="40.0" />
         <Button layoutX="13.0" layoutY="480.0" mnemonicParsing="false" onAction="#clearSelectedTableButton" prefHeight="38.0" prefWidth="135.0" text="Clear Selected Table" />
         <Button layoutX="338.0" layoutY="480.0" mnemonicParsing="false" onAction="#addNewTableButton" prefHeight="38.0" prefWidth="110.0" text="Add New Table" />
-        <Button layoutX="463.0" layoutY="481.0" mnemonicParsing="false" onAction="#updateTableDetailsButton" prefHeight="38.0" prefWidth="127.0" text="Update Table Details" />
-        <Button layoutX="600.0" layoutY="481.0" mnemonicParsing="false" onAction="#deleteTableButton" prefHeight="38.0" prefWidth="107.0" text="Delete Table" />
+        <Button layoutX="463.0" layoutY="481.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="127.0" text="Update Table Details" />
+        <Button layoutX="600.0" layoutY="481.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="107.0" text="Delete Table" />
         <SplitMenuButton layoutX="406.0" layoutY="40.0" mnemonicParsing="false" text="Table Status">
             <items>
                 <MenuItem mnemonicParsing="false" text="Action 1" />

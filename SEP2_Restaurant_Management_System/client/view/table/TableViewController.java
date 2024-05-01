@@ -15,9 +15,9 @@ public class TableViewController implements ViewController {
     @FXML
     private TableView<SimpleTableViewModel> tableView;
     @FXML
-    private TableColumn<SimpleTableViewModel, Integer> tableNumberColumn;
+    private TableColumn<SimpleTableViewModel, Number> tableNumberColumn;
     @FXML
-    private TableColumn<SimpleTableViewModel, Integer> capacityColumn;
+    private TableColumn<SimpleTableViewModel, Number> capacityColumn;
     @FXML
     private TableColumn<SimpleTableViewModel, Boolean> statusColumn;
     @FXML
@@ -36,15 +36,17 @@ public class TableViewController implements ViewController {
     private TableViewModel tableViewModel;
 
 
+
     public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
         this.viewHandler = viewHandler;
         this.tableViewModel = viewModelFactory.getTableViewModel();
 
+
         tableView.setItems(tableViewModel.getTableList());
-        //tableNumberColumn.setCellValueFactory(cellData -> cellData.getValue().getTableNumberProperty());
-        //capacityColumn.setCellValueFactory(cellData -> cellData.getValue().getCapacityProperty());
+        tableNumberColumn.setCellValueFactory(cellData -> cellData.getValue().getTableNumberProperty());
+        capacityColumn.setCellValueFactory(cellData -> cellData.getValue().getCapacityProperty());
         statusColumn.setCellValueFactory(cellData -> cellData.getValue().getStatusProperty());
-        errorLabel.textProperty().bind(tableViewModel.getErrorProperty());
+        //errorLabel.textProperty().bind(tableViewModel.getErrorProperty());
 
         tableViewModel.setSelected(null);
         tableViewModel.deselect();
@@ -58,6 +60,8 @@ public class TableViewController implements ViewController {
         });
     }
 
+
+
     @FXML
     private void clearSelectedTableButton(ActionEvent event) { // Corrected method signature
         tableView.getSelectionModel().clearSelection();
@@ -67,5 +71,6 @@ public class TableViewController implements ViewController {
     private void addNewTableButton(ActionEvent event) { // Corrected method signature
         tableViewModel.addNewTable();
     }
+
 
 }

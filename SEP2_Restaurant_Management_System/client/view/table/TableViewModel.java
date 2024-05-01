@@ -36,7 +36,7 @@ public class TableViewModel implements PropertyChangeListener {
     public TableViewModel(ModelFactory modelFactory, ViewState viewState) {
         this.tablemodel = modelFactory.getTableModel();
         this.reservationmodel = modelFactory.getReservationModel();
-        tableList = FXCollections.observableArrayList();
+        this.tableList = FXCollections.observableArrayList();
         this.selectedTableProperty = new SimpleObjectProperty<>();
         this.errorLabel = new SimpleStringProperty();
         tablemodel.addListener(this);

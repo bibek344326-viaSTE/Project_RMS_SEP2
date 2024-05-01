@@ -24,9 +24,9 @@ public class TableModelManager implements TableModel {
 
         // TODO : change all the method from table list to table server and move table list to server section
         private void createDummyData() {
-            createTable(1, 4);
-            createTable(2, 2);
-            createTable(3, 6);
+         tableList.add(new Table(1, 4));
+         tableList.add(new Table(2, 5));
+         tableList.add(new Table(3, 7));
         }
 
     @Override
