@@ -41,8 +41,8 @@ public class TableViewController implements ViewController {
         this.tableViewModel = viewModelFactory.getTableViewModel();
 
         tableView.setItems(tableViewModel.getTableList());
-        tableNumberColumn.setCellValueFactory(cellData -> cellData.getValue().getTableNumberProperty());
-        capacityColumn.setCellValueFactory(cellData -> cellData.getValue().getCapacityProperty());
+        //tableNumberColumn.setCellValueFactory(cellData -> cellData.getValue().getTableNumberProperty());
+        //capacityColumn.setCellValueFactory(cellData -> cellData.getValue().getCapacityProperty());
         statusColumn.setCellValueFactory(cellData -> cellData.getValue().getStatusProperty());
         errorLabel.textProperty().bind(tableViewModel.getErrorProperty());
 
