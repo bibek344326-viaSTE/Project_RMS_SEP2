@@ -63,7 +63,7 @@ public class TableList implements PropertyChangeListener {
 
     // Method to get all tables
     public ArrayList<Table> getAllTables() {
-        return tables;
+        return this.tables;
     }
 
     public ArrayList<Table> getVacantTables() {

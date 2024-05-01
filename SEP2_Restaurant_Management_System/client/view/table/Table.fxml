@@ -39,7 +39,7 @@
                             <content>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="393.0" prefWidth="714.0">
                                     <children>
-                                        <TableView prefHeight="356.0" prefWidth="714.0">
+                                        <TableView fx:id="tableView" prefHeight="356.0" prefWidth="714.0">
                                             <columns>
                                                 <TableColumn fx:id="tableNumberColumn" prefWidth="154.39999103546143" text="Table Number" />
                                                 <TableColumn fx:id="capacityColumn" prefWidth="173.59999084472656" text="Capacity " />
