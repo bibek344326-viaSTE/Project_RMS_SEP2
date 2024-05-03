@@ -35,7 +35,7 @@ public class RunServer {
             System.out.println("Table number: " + table.getTableNumber() + "       Table Capacity: " + table.getCapacity());
         }
         CustomersDAO customersDAO = new CustomerDAOManager();
-        customersDAO.addCustomer(new Customer("Bibek"));
+        customersDAO.addCustomer(new Customer("Bibek","52823481"));
         ReservationDAO reservationDAO = new ReservationDAOManager();
         reservationDAO.addReservation(3,1, LocalDateTime.now());
 
