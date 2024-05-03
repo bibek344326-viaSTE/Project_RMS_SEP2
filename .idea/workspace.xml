@@ -41,6 +41,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
@@ -59,6 +60,27 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.30393487&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.RunClient.executor": "Run",
+    "Application.RunServer.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "stage__development",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/samos/Desktop/postgresql-42.7.3.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.30393487",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> Stashed changes
   }
 }</component>
   <component name="RunManager" selected="Application.RunClient">
@@ -141,8 +163,12 @@
       <workItem from="1714590785954" duration="196000" />
       <workItem from="1714652846223" duration="976000" />
       <workItem from="1714719834161" duration="193000" />
+<<<<<<< Updated upstream
       <workItem from="1714721986324" duration="313000" />
       <workItem from="1714722311378" duration="271000" />
+=======
+      <workItem from="1714722928968" duration="10000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
