@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class CustomerDAOManager implements CustomersDAO{
+public class CustomerDAOManager implements CustomersDAO {
 
     private ArrayList<Customer> getCustomers(PreparedStatement preparedStatement) throws SQLException {
         ResultSet resultSet = preparedStatement.executeQuery();
@@ -18,7 +18,7 @@ public class CustomerDAOManager implements CustomersDAO{
             int customerId = resultSet.getInt("customer_id");
             String name = resultSet.getString("name");
             String phoneNumber = resultSet.getString("phoneNumber");
-            Customer customer = new Customer(name);
+            Customer customer = new Customer(name, phoneNumber);
             customers.add(customer);
         }
         return customers;
@@ -41,7 +41,7 @@ public class CustomerDAOManager implements CustomersDAO{
                     "INSERT INTO customer (name, phoneNumber) VALUES (?, ?)");
 
             preparedStatement.setString(1, customer.getName());
-            preparedStatement.setString(2, customer.getPhoneNumber());
+            preparedStatement.setString(2, customer.getPhonenumber());
             preparedStatement.executeUpdate();
 
             System.out.println("Customer added successfully.");

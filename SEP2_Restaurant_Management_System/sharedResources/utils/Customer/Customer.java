@@ -4,12 +4,10 @@ import sharedResources.utils.Reservation.Reservation;
 
 public class Customer {
     private String name;
-    private Reservation reservation;
     private String phonenumber;
 
-    public Customer(String name, Reservation reservation,String phonenumber) {
+    public Customer(String name, String phonenumber) {
         this.name = name;
-        this.reservation = reservation;
         this.phonenumber = phonenumber;
     }
 
@@ -28,8 +26,6 @@ public class Customer {
     public void setPhonenumber(String phonenumber) {
         this.phonenumber = phonenumber;
     }
-
-
 
 
 }
