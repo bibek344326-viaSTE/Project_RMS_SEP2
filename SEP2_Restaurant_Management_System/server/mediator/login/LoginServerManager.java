@@ -1,7 +1,7 @@
 package server.mediator.login;
 
 import server.model.login.LoginModel;
-import sharedResources.networking.serverInterfaces.LoginServer;
+import sharedResources.mediator.serverInterfaces.LoginServer;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;

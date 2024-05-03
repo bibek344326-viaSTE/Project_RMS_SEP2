@@ -1,8 +1,8 @@
 package server.mediator;
 
-import sharedResources.networking.serverInterfaces.LoginServer;
-import sharedResources.networking.serverInterfaces.Server;
-import sharedResources.networking.serverInterfaces.TableServer;
+import sharedResources.mediator.serverInterfaces.LoginServer;
+import sharedResources.mediator.serverInterfaces.Server;
+import sharedResources.mediator.serverInterfaces.TableServer;
 
 import java.rmi.AlreadyBoundException;
 import java.rmi.RemoteException;

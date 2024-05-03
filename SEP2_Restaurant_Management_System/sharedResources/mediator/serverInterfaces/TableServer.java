@@ -1,7 +1,5 @@
-package sharedResources.networking.serverInterfaces;
+package sharedResources.mediator.serverInterfaces;
 
-import client.model.Reservation.ReservationList;
-import sharedResources.utils.Customer.Customer;
 import sharedResources.utils.Request;
 import sharedResources.utils.table.Table;
 

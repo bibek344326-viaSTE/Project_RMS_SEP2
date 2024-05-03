@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="38bdc4b7-9ba6-447a-9821-5632651fa375" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/RemoteClientRMI.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/RemoteClientRMI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/kitchen/KitchenClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/kitchen/KitchenClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/login/LoginClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/login/LoginClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/reservation/ReservationClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/reservation/ReservationClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/staff/StaffClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/staff/StaffClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/table/TableClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/mediator/table/TableClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/RunServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/RunServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/ServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/ServerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/login/CreateServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/login/CreateServerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/login/LoginServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/login/LoginServerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/manageTables/TablesServerSide.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/mediator/manageTables/TablesServerSide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/networking/serverInterfaces/CreateAccountServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/mediator/serverInterfaces/CreateAccountServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/networking/serverInterfaces/LoginServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/mediator/serverInterfaces/LoginServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/networking/serverInterfaces/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/mediator/serverInterfaces/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/networking/serverInterfaces/TableServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/mediator/serverInterfaces/TableServer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.RunServer.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "stage__development",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="RunServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.RunServer" />
@@ -32,5 +77,28 @@
         <item itemvalue="Application.RunServer" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38bdc4b7-9ba6-447a-9821-5632651fa375" name="Changes" comment="" />
+      <created>1714722969973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714722969973</updated>
+      <workItem from="1714722970933" duration="2307000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

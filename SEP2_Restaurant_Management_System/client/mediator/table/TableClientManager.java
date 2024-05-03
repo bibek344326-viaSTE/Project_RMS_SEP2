@@ -1,10 +1,7 @@
 package client.mediator.table;
 
 import client.mediator.RemoteClientRMI;
-import client.model.Reservation.ReservationList;
-import sharedResources.networking.serverInterfaces.TableServer;
-import sharedResources.utils.Customer.Customer;
-import sharedResources.utils.table.Table;
+import sharedResources.mediator.serverInterfaces.TableServer;
 
 import java.rmi.RemoteException;
 
