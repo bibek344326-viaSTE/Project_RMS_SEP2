@@ -1,7 +1,7 @@
 package client.mediator.kitchen;
 
 import client.mediator.RemoteClientRMI;
-import sharedResources.networking.serverInterfaces.LoginServer;
+import sharedResources.mediator.serverInterfaces.LoginServer;
 
 import java.rmi.RemoteException;
 

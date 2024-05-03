@@ -2,7 +2,7 @@ package client.mediator.reservation;
 
 import client.mediator.RemoteClientRMI;
 import client.model.Reservation.ReservationList;
-import sharedResources.networking.serverInterfaces.LoginServer;
+import sharedResources.mediator.serverInterfaces.LoginServer;
 import sharedResources.utils.Customer.Customer;
 import sharedResources.utils.table.Table;
 

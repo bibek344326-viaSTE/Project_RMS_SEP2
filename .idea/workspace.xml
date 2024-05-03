@@ -4,50 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6957ca9-c665-4c5b-a733-d480432ddfe6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/foodmenu/FoodmenuList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/foodmenu/FoodmenuList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/foodmenu/FoodmenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/foodmenu/FoodmenuManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/foodmenu/FoodmenuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/model/foodmenu/FoodmenuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/foodmenu/foodmenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/foodmenu/foodmenu.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2fwwHXES7McQAilDZDtlgvomcaM" />
+
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.RunClient.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RunServer.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/samos/Desktop/postgresql-42.7.3.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RunManager">
-    <configuration name="RunServer" type="Application" factoryName="Application" nameIsGenerated="true">
+
       <option name="MAIN_CLASS_NAME" value="server.RunServer" />
       <module name="Project_RMS_SEP2-stage_development" />
       <extension name="coverage">
@@ -73,29 +42,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b6957ca9-c665-4c5b-a733-d480432ddfe6" name="Changes" comment="" />
-      <created>1714725362674</created>
+      <changelist id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="" />
+      <created>1713465446686</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714725362674</updated>
-      <workItem from="1714725365258" duration="450000" />
-      <workItem from="1714725875347" duration="530000" />
+      <updated>1713465446686</updated>
+      <workItem from="1713465448891" duration="270000" />
+      <workItem from="1713465927837" duration="4257000" />
+      <workItem from="1713507258352" duration="7235000" />
+      <workItem from="1713774602337" duration="2611000" />
+      <workItem from="1713811103449" duration="3000" />
+      <workItem from="1713898480459" duration="137000" />
+      <workItem from="1713957580448" duration="27000" />
+      <workItem from="1714035324414" duration="1996000" />
+      <workItem from="1714123667899" duration="6206000" />
+      <workItem from="1714158571571" duration="310000" />
+      <workItem from="1714721284385" duration="77000" />
+      <workItem from="1714721373407" duration="14000" />
+      <workItem from="1714722159422" duration="67000" />
+      <workItem from="1714722526765" duration="731000" />
+      <workItem from="1714723327823" duration="227000" />
+      <workItem from="1714723669610" duration="1057000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/RunClient.java</url>
+          <line>3</line>
+          <properties class="client.RunClient">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

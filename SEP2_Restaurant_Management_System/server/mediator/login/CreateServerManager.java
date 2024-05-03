@@ -1,7 +1,7 @@
 package server.mediator.login;
 
 import server.model.create.CreateHandler;
-import sharedResources.networking.serverInterfaces.CreateAccountServer;
+import sharedResources.mediator.serverInterfaces.CreateAccountServer;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;

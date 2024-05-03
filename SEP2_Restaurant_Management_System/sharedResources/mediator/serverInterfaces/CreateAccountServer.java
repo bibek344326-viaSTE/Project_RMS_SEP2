@@ -1,4 +1,4 @@
-package sharedResources.networking.serverInterfaces;
+package sharedResources.mediator.serverInterfaces;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

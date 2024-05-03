@@ -1,4 +1,4 @@
-package sharedResources.networking.serverInterfaces;
+package sharedResources.mediator.serverInterfaces;
 
 import java.rmi.AlreadyBoundException;
 import java.rmi.Remote;

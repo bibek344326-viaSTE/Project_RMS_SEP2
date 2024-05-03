@@ -1,9 +1,7 @@
 package server.mediator.manageTables;
 
-import client.model.Reservation.ReservationList;
 import server.model.tables.TableHandler;
-import sharedResources.networking.serverInterfaces.TableServer;
-import sharedResources.utils.Customer.Customer;
+import sharedResources.mediator.serverInterfaces.TableServer;
 import sharedResources.utils.Request;
 import sharedResources.utils.table.Table;
 

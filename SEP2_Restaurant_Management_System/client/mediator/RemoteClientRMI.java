@@ -1,6 +1,6 @@
 package client.mediator;
 
-import sharedResources.networking.serverInterfaces.Server;
+import sharedResources.mediator.serverInterfaces.Server;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
