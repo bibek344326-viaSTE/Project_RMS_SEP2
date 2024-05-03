@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/sharedResources/utils/foodmenu/foodmenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_RMS_SEP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_RMS_SEP2.iml" afterDir="false" />
-    </list>
+    <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Database__connection__and__queries__for__tables__reservation__customers",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/samko/Desktop/postgresql-42.7.3.jar",
+    "last_opened_file_path": "C:/Users/samos/Desktop/postgresql-42.7.3.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -141,6 +137,7 @@
       <workItem from="1714550364480" duration="4371000" />
       <workItem from="1714590785954" duration="196000" />
       <workItem from="1714652846223" duration="976000" />
+      <workItem from="1714719834161" duration="193000" />
     </task>
     <servers />
   </component>
