@@ -1,12 +1,9 @@
 package client.model.foodmenu;
 
 import sharedResources.utils.foodmenu.foodmenu;
-
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
 import java.util.ArrayList;
 
-public class FoodmenuList implements PropertyChangeListener {
+public class FoodmenuList  {
     private ArrayList<foodmenu> foodItems;
 
     public FoodmenuList() {
@@ -14,19 +11,14 @@ public class FoodmenuList implements PropertyChangeListener {
     }
 
     // Method to add a new food item
-    public void addFoodItem(String name, int price) {
-        foodmenu newFoodItem = new foodmenu(name, price);
+    public void addFoodItem(String name, String description) {
+        foodmenu newFoodItem = new foodmenu(name, description);
         foodItems.add(newFoodItem);
     }
 
     // Method to delete a food item by name
     public void deleteFoodItem(String name) {
-        for (int i = 0; i < foodItems.size(); i++) {
-            if (foodItems.get(i).getName().equals(name)) {
-                foodItems.remove(i);
-                break;
-            }
-        }
+        foodItems.removeIf(item -> item.getName().equals(name));
     }
 
     // Method to get the number of food items
@@ -36,7 +28,7 @@ public class FoodmenuList implements PropertyChangeListener {
 
     // Method to get all food items
     public ArrayList<foodmenu> getAllFoodItems() {
-        return this.foodItems;
+        return new ArrayList<>(foodItems);
     }
 
     @Override
@@ -46,9 +38,4 @@ public class FoodmenuList implements PropertyChangeListener {
                 '}';
     }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent evt) {
-        // If there are any specific property change events to handle, you can implement them here
-        // This method is optional based on your requirements
-    }
 }
