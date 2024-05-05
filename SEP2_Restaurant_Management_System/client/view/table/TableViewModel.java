@@ -24,8 +24,6 @@ public class TableViewModel implements PropertyChangeListener {
     private ObjectProperty<SimpleTableViewModel> selectedTableProperty;
     private ReservationModel reservationmodel;
 
-
-
     public StringProperty getErrorProperty() {
         return errorLabel;
     }

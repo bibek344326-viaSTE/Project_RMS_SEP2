@@ -1,11 +1,11 @@
 package client.view;
 
 import client.core.ViewModelFactory;
+import client.view.staff.StaffTabViewController;
 import client.view.table.TableViewController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -20,6 +20,7 @@ public class ViewHandler {
     private Scene staffMemberScene;
     private Scene kitchenScene;
     private Scene tableScene;
+    private StaffTabViewController staffTabViewController;
 
 
     private TableViewController tableViewController;
@@ -117,7 +118,7 @@ public class ViewHandler {
     public void openStaffMemberView() {
         if (staffMemberScene == null) {
             try {
-                Parent root = loadFXML("./table/Table.fxml");
+                Parent root = loadFXML("./staff/StaffTabView.fxml");
                 staffMemberScene = new Scene(root);
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -157,7 +158,7 @@ public class ViewHandler {
     public void openTableView() {
         if (tableScene == null) {
             try {
-                Parent root = loadFXML("./table/Table.fxml");
+                Parent root = loadFXML("./staff/StaffTabView.fxml");
                 tableScene = new Scene(root);
             } catch (IOException e) {
                 throw new RuntimeException(e);

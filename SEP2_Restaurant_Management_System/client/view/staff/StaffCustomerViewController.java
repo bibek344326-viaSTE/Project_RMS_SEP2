@@ -5,10 +5,12 @@ import client.view.ViewController;
 import client.view.ViewHandler;
 import client.view.login.LoginViewModel;
 import javafx.event.ActionEvent;
+import javafx.scene.layout.Region;
 
-public class StaffViewController implements ViewController {
+public class StaffCustomerViewController implements ViewController {
     private LoginViewModel loginViewModel;
-
+    private Region root;
+    private ViewModelFactory viewModelFactory;
     private ViewHandler viewHandler;
     @Override
     public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
@@ -35,4 +37,5 @@ public class StaffViewController implements ViewController {
     public void logInAsStaff() {
         viewHandler.openStaffMemberView();
     }
+
 }
