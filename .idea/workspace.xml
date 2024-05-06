@@ -47,8 +47,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -76,6 +76,8 @@
       <workItem from="1714722526765" duration="731000" />
       <workItem from="1714723327823" duration="227000" />
       <workItem from="1714723669610" duration="1057000" />
+      <workItem from="1714726664331" duration="122000" />
+      <workItem from="1714726810692" duration="240000" />
     </task>
     <servers />
   </component>
@@ -88,7 +90,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/RunClient.java</url>
           <line>3</line>
-          <properties class="client.RunClient">
+          <properties class="client.RunClient" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
