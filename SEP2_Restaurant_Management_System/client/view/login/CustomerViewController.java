@@ -33,7 +33,7 @@ public class CustomerViewController implements ViewController {
 
 
     @Override
-    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler, Region root) {
+    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
         this.viewModelFactory = viewModelFactory;
         this.viewHandler = viewHandler;
     }

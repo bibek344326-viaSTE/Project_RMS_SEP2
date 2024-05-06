@@ -62,7 +62,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.RunClient">
+  <component name="RunManager" selected="Application.RunServer">
     <configuration name="RunClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.RunClient" />
       <module name="Project_RMS_SEP2" />
@@ -91,8 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RunClient" />
         <item itemvalue="Application.RunServer" />
+        <item itemvalue="Application.RunClient" />
       </list>
     </recent_temporary>
   </component>

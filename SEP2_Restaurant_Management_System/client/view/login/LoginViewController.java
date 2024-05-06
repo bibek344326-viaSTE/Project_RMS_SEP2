@@ -12,7 +12,7 @@ public class LoginViewController implements ViewController {
     private ViewHandler viewHandler;
 
     @Override
-    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler, Region root) {
+    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
         this.loginViewModel = viewModelFactory.getLogInViewModel();
         this.viewHandler = viewHandler;
 
