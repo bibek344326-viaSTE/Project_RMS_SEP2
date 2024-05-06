@@ -37,7 +37,6 @@ public class TableViewController implements ViewController {
     private  ViewModelFactory viewModelFactory;
 
 
-
     public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
         this.viewHandler = viewHandler;
         this.tableViewModel = viewModelFactory.getTableViewModel();

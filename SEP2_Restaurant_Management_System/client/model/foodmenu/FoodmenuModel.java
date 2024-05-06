@@ -1,14 +1,14 @@
 package client.model.foodmenu;
 
-import sharedResources.utils.foodmenu.foodmenu;
+import sharedResources.utils.foodmenu.Foodmenu;
 
-import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 
 public interface FoodmenuModel {
-    void addFoodItem(String name, int price);
+    void addFoodItem(String name, String type);
+    void editFoodItem(String name, String type);
     void deleteFoodItem(String name);
     int getNumberOfFoodItems();
-    ArrayList<foodmenu> getAllFoodItems();
+    ArrayList<Foodmenu> getAllFoodItems();
 
 }

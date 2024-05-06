@@ -1,21 +1,21 @@
 package client.model.foodmenu;
 
-import sharedResources.utils.foodmenu.foodmenu;
+import sharedResources.utils.foodmenu.Foodmenu;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
 import java.util.ArrayList;
 
 public class FoodmenuList implements PropertyChangeListener {
-    private ArrayList<foodmenu> foodItems;
+    private ArrayList<Foodmenu> foodItems;
 
     public FoodmenuList() {
         foodItems = new ArrayList<>();
     }
 
     // Method to add a new food item
-    public void addFoodItem(String name, int price) {
-        foodmenu newFoodItem = new foodmenu(name, price);
+    public void addFoodItem(String name, String type) {
+        Foodmenu newFoodItem = new Foodmenu(name, type);
         foodItems.add(newFoodItem);
     }
 
@@ -28,6 +28,15 @@ public class FoodmenuList implements PropertyChangeListener {
             }
         }
     }
+    public void editFoodItem( String name, String type) {
+        for (Foodmenu foodItem : foodItems) {
+            if (foodItem.getName().equals(name)) {
+                foodItem.setName(name);
+                foodItem.setType(type);
+                break;
+            }
+        }
+    }
 
     // Method to get the number of food items
     public int getNumberOfFoodItems() {
@@ -35,7 +44,7 @@ public class FoodmenuList implements PropertyChangeListener {
     }
 
     // Method to get all food items
-    public ArrayList<foodmenu> getAllFoodItems() {
+    public ArrayList<Foodmenu> getAllFoodItems() {
         return this.foodItems;
     }
 

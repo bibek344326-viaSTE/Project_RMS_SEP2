@@ -2,6 +2,8 @@ package client.core;
 
 import client.mediator.Client;
 import client.mediator.ClientHandler;
+import client.mediator.foodmenu.FoodMenuClient;
+import client.mediator.foodmenu.FoodMenuClientManager;
 import client.mediator.kitchen.KitchenClient;
 import client.mediator.kitchen.KitchenClientManager;
 import client.mediator.login.LoginClient;
@@ -22,6 +24,7 @@ public class ClientFactory {
     private ReservationClient reservationClient;
     private StaffClient staffClient;
     private KitchenClient kitchenClient;
+    private FoodMenuClient foodMenuClient;
 
     public LoginClient getLoginClient() throws RemoteException {
         if(loginClient == null){
@@ -56,6 +59,12 @@ public class ClientFactory {
             kitchenClient= new KitchenClientManager();
         }
         return kitchenClient;
+    }
+    public FoodMenuClient getFoodMenuClient() throws RemoteException {
+        if(foodMenuClient == null){
+            foodMenuClient= new FoodMenuClientManager();
+        }
+        return foodMenuClient;
     }
 }
 

@@ -23,13 +23,14 @@ public class TableViewModel implements PropertyChangeListener {
     private TableModel tablemodel;
     private ObjectProperty<SimpleTableViewModel> selectedTableProperty;
     private ReservationModel reservationmodel;
+    private StringProperty errorLabel;
+    private ViewState viewState;
 
     public StringProperty getErrorProperty() {
         return errorLabel;
     }
 
-    private StringProperty errorLabel;
-    private ViewState viewState;
+
 
     public TableViewModel(ModelFactory modelFactory, ViewState viewState) {
         this.tablemodel = modelFactory.getTableModel();
@@ -46,6 +47,7 @@ public class TableViewModel implements PropertyChangeListener {
     public ObservableList<SimpleTableViewModel> getTableList() {
         return tableList;
     }
+
     public void updateTableList(){
         tableList.clear();
         for(int i = 0; i < tablemodel.getAllTables().size(); i++){

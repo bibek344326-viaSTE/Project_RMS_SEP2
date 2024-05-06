@@ -1,5 +1,6 @@
 package server.mediator;
 
+import sharedResources.mediator.serverInterfaces.FoodMenuServer;
 import sharedResources.mediator.serverInterfaces.LoginServer;
 import sharedResources.mediator.serverInterfaces.Server;
 import sharedResources.mediator.serverInterfaces.TableServer;
@@ -34,6 +35,11 @@ public class ServerManager  implements Server {
 
     @Override
     public TableServer getTableServer() throws RemoteException {
+        return null;
+    }
+
+    @Override
+    public FoodMenuServer getFoodMenuServer() throws RemoteException {
         return null;
     }
 }

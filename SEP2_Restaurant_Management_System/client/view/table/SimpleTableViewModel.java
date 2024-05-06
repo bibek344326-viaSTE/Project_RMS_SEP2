@@ -1,6 +1,8 @@
 package client.view.table;
 
 import javafx.beans.property.*;
+import javafx.beans.value.ObservableValue;
+import sharedResources.utils.foodmenu.Foodmenu;
 import sharedResources.utils.table.Table;
 
 
@@ -9,11 +11,11 @@ public class SimpleTableViewModel {
     private final IntegerProperty capacityProperty;
     private final BooleanProperty statusProperty;
 
-
     public SimpleTableViewModel(Table table) {
         this.tableNumberProperty = new SimpleIntegerProperty(table.getTableNumber());
         this.capacityProperty = new SimpleIntegerProperty(table.getCapacity());
         this.statusProperty = new SimpleBooleanProperty(table.isOccupied());
+
 
     }
 
@@ -28,6 +30,5 @@ public class SimpleTableViewModel {
     public BooleanProperty getStatusProperty() {
         return statusProperty;
     }
-
 
 }

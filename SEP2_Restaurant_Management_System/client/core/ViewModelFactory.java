@@ -2,6 +2,7 @@ package client.core;
 
 import client.model.table.TableModel;
 import client.view.login.LoginViewModel;
+import client.view.staff.StaffMenuViewModel;
 import client.view.table.TableViewModel;
 
 public class ViewModelFactory {
@@ -9,6 +10,7 @@ public class ViewModelFactory {
     private final ModelFactory modelFactory;
     private LoginViewModel loginViewModel;
     private TableViewModel tableViewModel;
+    private StaffMenuViewModel staffMenuViewModel;
     private TableModel model;
     private ViewState viewState;
 
@@ -31,6 +33,14 @@ public class ViewModelFactory {
         }
         return tableViewModel;
     }
+
+    public StaffMenuViewModel getStaffMenuViewModel() {
+        if (staffMenuViewModel  == null){
+            staffMenuViewModel = new StaffMenuViewModel(modelFactory, viewState);
+        }
+        return staffMenuViewModel;
+
     }
+}
 
 

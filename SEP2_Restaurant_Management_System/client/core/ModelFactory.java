@@ -2,6 +2,8 @@ package client.core;
 
 import client.model.Reservation.ReservationModel;
 import client.model.Reservation.ReservationModelManager;
+import client.model.foodmenu.FoodmenuManager;
+import client.model.foodmenu.FoodmenuModel;
 import client.model.kitchen.KitchenModel;
 import client.model.kitchen.KitchenModelManager;
 import client.model.login.LoginModel;
@@ -21,6 +23,7 @@ public class ModelFactory {
     private ReservationModel reservationModel;
     private StaffModel staffModel;
     private KitchenModel kitchenModel;
+    private FoodmenuModel foodmenuModel;
 
     public ModelFactory(ClientFactory client) {
         this.client = client;
@@ -80,5 +83,15 @@ public class ModelFactory {
             }
         }
         return kitchenModel;
+    }
+    public FoodmenuModel getFoodMenuModel() {
+        if (foodmenuModel == null) {
+            try {
+                foodmenuModel = new FoodmenuManager(client.getFoodMenuClient());
+            } catch (RemoteException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return foodmenuModel;
     }
 }
