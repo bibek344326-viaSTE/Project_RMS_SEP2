@@ -15,9 +15,9 @@ public class TableViewController implements ViewController {
     @FXML
     private TableView<SimpleTableViewModel> tableView;
     @FXML
-    private TableColumn<SimpleTableViewModel, Integer> tableNumberColumn;
+    private TableColumn<SimpleTableViewModel, Number> tableNumberColumn;
     @FXML
-    private TableColumn<SimpleTableViewModel, Integer> capacityColumn;
+    private TableColumn<SimpleTableViewModel, Number> capacityColumn;
     @FXML
     private TableColumn<SimpleTableViewModel, Boolean> statusColumn;
     @FXML
@@ -36,7 +36,7 @@ public class TableViewController implements ViewController {
     private TableViewModel tableViewModel;
     private Region root;
 
-    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler, Region root) {
+    public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
         this.viewHandler = viewHandler;
         this.tableViewModel = viewModelFactory.getTableViewModel();
         this.root = root;

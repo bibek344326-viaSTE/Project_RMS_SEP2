@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="" />
+    <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/table/Table.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/table/Table.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/table/TableViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/table/TableViewController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +65,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.RunServer">
+  <component name="RunManager" selected="Application.RunClient">
     <configuration name="RunClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.RunClient" />
       <module name="Project_RMS_SEP2" />
@@ -91,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RunServer" />
         <item itemvalue="Application.RunClient" />
+        <item itemvalue="Application.RunServer" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +133,7 @@
       <workItem from="1714492442964" duration="2000" />
       <workItem from="1714493014433" duration="298000" />
       <workItem from="1714493926200" duration="2422000" />
+      <workItem from="1715029036420" duration="48000" />
     </task>
     <servers />
   </component>
