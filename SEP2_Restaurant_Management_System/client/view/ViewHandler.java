@@ -2,7 +2,7 @@ package client.view;
 
 import client.core.ViewModelFactory;
 import client.view.staff.StaffTabViewController;
-import client.view.table.TableViewController;
+import client.view.staff.TableViewController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -158,7 +158,7 @@ public class ViewHandler {
     public void openTableView() {
         if (tableScene == null) {
             try {
-                Parent root = loadFXML("./staff/StaffTabView.fxml");
+                Parent root = loadFXML("./table/Table.fxml");
                 tableScene = new Scene(root);
             } catch (IOException e) {
                 throw new RuntimeException(e);

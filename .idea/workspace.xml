@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/core/ViewModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/core/ViewModelFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/ViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/ViewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/StaffMenuViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/StaffMenuViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/StaffMenuViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/StaffMenuViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/StaffTabViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/StaffTabViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/StaffTablesView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/StaffTablesView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/table/SimpleTableViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/SimpleTableViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/table/Table.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/table/Table.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/table/TableViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/TableViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/table/TableViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/client/view/staff/TableViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +61,10 @@
     "Application.RunServer.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "stage__development",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/samko/Desktop/postgresql-42.7.3.jar",
+    "last_opened_file_path": "C:/Users/samko/AppData/Local/SceneBuilder/SceneBuilder.exe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -136,6 +147,7 @@
       <workItem from="1714726664331" duration="122000" />
       <workItem from="1714726810692" duration="240000" />
       <workItem from="1715023367009" duration="109000" />
+      <workItem from="1715023573262" duration="806000" />
     </task>
     <servers />
   </component>

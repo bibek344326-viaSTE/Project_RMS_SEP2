@@ -1,8 +1,6 @@
-package client.view.table;
+package client.view.staff;
 
 import javafx.beans.property.*;
-import javafx.beans.value.ObservableValue;
-import sharedResources.utils.foodmenu.Foodmenu;
 import sharedResources.utils.table.Table;
 
 

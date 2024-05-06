@@ -1,4 +1,4 @@
-package client.view.table;
+package client.view.staff;
 
 import client.core.ViewModelFactory;
 import client.view.ViewController;
@@ -6,9 +6,6 @@ import client.view.ViewHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.Region;
-import sharedResources.utils.table.Table;
 import javafx.scene.control.TableView.TableViewSelectionModel; // Import missing class
 
 public class TableViewController implements ViewController {

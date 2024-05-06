@@ -1,4 +1,4 @@
-package client.view.table;
+package client.view.staff;
 
 import client.core.ModelFactory;
 import client.core.ViewState;
@@ -10,7 +10,6 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.TableView;
 import sharedResources.utils.Reservation.Reservation;
 import sharedResources.utils.table.Table;
 

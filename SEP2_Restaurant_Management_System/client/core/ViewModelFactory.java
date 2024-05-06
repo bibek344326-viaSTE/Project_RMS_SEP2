@@ -3,7 +3,7 @@ package client.core;
 import client.model.table.TableModel;
 import client.view.login.LoginViewModel;
 import client.view.staff.StaffMenuViewModel;
-import client.view.table.TableViewModel;
+import client.view.staff.TableViewModel;
 
 public class ViewModelFactory {
 
