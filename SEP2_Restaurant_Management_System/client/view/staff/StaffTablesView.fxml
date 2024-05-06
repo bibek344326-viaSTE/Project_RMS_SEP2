@@ -13,9 +13,9 @@
         <Button layoutX="744.0" layoutY="550.0" mnemonicParsing="false" onAction="#deleteTableButton" prefHeight="38.0" prefWidth="107.0" text="Delete Table" />
       <TableView layoutX="-3.0" layoutY="1.0" prefHeight="530.0" prefWidth="890.0">
          <columns>
-            <TableColumn prefWidth="210.3999969959259" text="Table Number" />
-            <TableColumn prefWidth="186.3999786376953" text="Capacity " />
-            <TableColumn prefWidth="193.60003662109375" text="Status" />
+            <TableColumn fx:id="tableNumberColumn" prefWidth="210.3999969959259" text="Table Number" />
+            <TableColumn fx:id="capacityColumn" prefWidth="186.3999786376953" text="Capacity " />
+            <TableColumn fx:id="statusColumn" prefWidth="193.60003662109375" text="Status" />
             <TableColumn prefWidth="294.39996337890625" text="Reserved By (Customer Name)" />
          </columns>
       </TableView>
