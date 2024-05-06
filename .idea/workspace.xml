@@ -53,13 +53,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "stage__development",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/samos/Desktop/javafx-sdk-21.0.3/lib",
+    "last_opened_file_path": "C:/Users/samko/Desktop/postgresql-42.7.3.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.30393487",
     "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
@@ -135,6 +135,7 @@
       <workItem from="1714723669610" duration="1057000" />
       <workItem from="1714726664331" duration="122000" />
       <workItem from="1714726810692" duration="240000" />
+      <workItem from="1715023367009" duration="109000" />
     </task>
     <servers />
   </component>
