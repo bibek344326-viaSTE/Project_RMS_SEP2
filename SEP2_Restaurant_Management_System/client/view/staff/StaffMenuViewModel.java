@@ -3,7 +3,6 @@ package client.view.staff;
 import client.core.ModelFactory;
 import client.core.ViewState;
 import client.model.foodmenu.FoodmenuModel;
-import client.view.table.SimpleTableViewModel;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;

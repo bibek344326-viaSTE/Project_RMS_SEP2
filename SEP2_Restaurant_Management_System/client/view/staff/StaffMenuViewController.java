@@ -2,8 +2,6 @@ package client.view.staff;
 
 import client.core.ViewModelFactory;
 import client.view.ViewHandler;
-import client.view.table.SimpleTableViewModel;
-import client.view.table.TableViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
