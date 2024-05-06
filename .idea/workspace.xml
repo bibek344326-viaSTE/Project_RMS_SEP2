@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c215dea-c672-45aa-ab03-73bee80e275b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Project_RMS_SEP2-stage_development.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project_RMS_SEP2-stage_development.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2_Restaurant_Management_System/server/database/DatabaseConnection.java" afterDir="false" />
     </list>
@@ -53,20 +54,33 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "stage__development",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/samos/Desktop/javafx-sdk-21.0.3/lib",
+    "last_opened_file_path": "C:/Users/samko/Desktop/postgresql-42.7.3.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.30393487",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.RunClient">
+    <configuration name="RunClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.RunClient" />
+      <module name="Project_RMS_SEP2-stage_development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -97,6 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunClient" />
         <item itemvalue="Application.RunServer" />
       </list>
     </recent_temporary>
@@ -135,6 +150,7 @@
       <workItem from="1714723669610" duration="1057000" />
       <workItem from="1714726664331" duration="122000" />
       <workItem from="1714726810692" duration="240000" />
+      <workItem from="1715015198742" duration="689000" />
     </task>
     <servers />
   </component>
