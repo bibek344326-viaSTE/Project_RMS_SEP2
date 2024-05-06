@@ -7,10 +7,8 @@ import java.util.Random;
 public class FoodmenuManager implements FoodmenuModel {
     private final FoodmenuList foodmenuList;
 
-
     public FoodmenuManager() {
         this.foodmenuList = new FoodmenuList();
-
         createDummyData();
     }
 
@@ -19,21 +17,19 @@ public class FoodmenuManager implements FoodmenuModel {
         String[] dishNames = {"Pasta", "Pizza", "Burger", "Salad", "Sushi", "Steak", "Soup", "Sandwich", "Taco", "Curry"};
         for (int i = 0; i < 10; i++) {
             String name = dishNames[random.nextInt(dishNames.length)];
-            int price = random.nextInt(20) + 5; // Random price between 5 and 24
-            foodmenuList.addFoodItem(name, price);
+            String description = "Description for " + name; // Example description
+            foodmenuList.addFoodItem(name, description);
         }
     }
 
     @Override
-    public void addFoodItem(String name, int price) {
-        foodmenuList.addFoodItem(name, price);
-
+    public void addFoodItem(String name, String description) {
+        foodmenuList.addFoodItem(name, description);
     }
 
     @Override
     public void deleteFoodItem(String name) {
         foodmenuList.deleteFoodItem(name);
-
     }
 
     @Override
@@ -45,6 +41,4 @@ public class FoodmenuManager implements FoodmenuModel {
     public ArrayList<foodmenu> getAllFoodItems() {
         return foodmenuList.getAllFoodItems();
     }
-
-
 }

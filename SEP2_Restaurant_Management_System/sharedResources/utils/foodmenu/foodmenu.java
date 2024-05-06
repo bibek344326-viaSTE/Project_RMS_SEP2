@@ -9,19 +9,19 @@ public class foodmenu {
         this.name = name;
     }
 
-    public int getPrice() {
-        return price;
+    public String getDescription() {
+        return description;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public foodmenu(String name, int price) {
+    public foodmenu(String name, String description) {
         this.name = name;
-        this.price = price;
+        this.description = description;
     }
 
     private String name;
-    private int price;
+    private String description;
 }
