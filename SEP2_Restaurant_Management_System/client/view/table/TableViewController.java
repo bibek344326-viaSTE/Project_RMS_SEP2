@@ -59,7 +59,10 @@ public class TableViewController implements ViewController {
             }
         });
     }
-
+    @FXML
+    private void deleteTableButton(ActionEvent event) {
+        tableViewModel.remove();
+    }
 
 
     @FXML
