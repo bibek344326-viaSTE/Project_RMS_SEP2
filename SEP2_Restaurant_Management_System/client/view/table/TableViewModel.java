@@ -165,7 +165,8 @@ public class TableViewModel implements PropertyChangeListener {
         }
     }
     public void remove(){
-        tablemodel.remove
+        tablemodel.deleteTable(selectedTableProperty.get().getTableNumberProperty().get());
+        updateTableList();
     }
 
     @Override
