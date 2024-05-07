@@ -31,7 +31,7 @@ public class TableViewController implements ViewController {
     private Button deleteTableButton;
     private ViewHandler viewHandler;
     private TableViewModel tableViewModel;
-    private  ViewModelFactory viewModelFactory;
+
 
 
     public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {

@@ -11,7 +11,7 @@
         <Button layoutX="415.0" layoutY="550.0" mnemonicParsing="false" onAction="#addNewTableButton" prefHeight="38.0" prefWidth="110.0" text="Add New Table" />
         <Button layoutX="573.0" layoutY="550.0" mnemonicParsing="false" onAction="#updateTableDetailsButton" prefHeight="38.0" prefWidth="127.0" text="Update Table Details" />
         <Button layoutX="744.0" layoutY="550.0" mnemonicParsing="false" onAction="#deleteTableButton" prefHeight="38.0" prefWidth="107.0" text="Delete Table" />
-      <TableView layoutX="-3.0" layoutY="1.0" prefHeight="530.0" prefWidth="890.0">
+      <TableView fx:id="tableView" layoutX="-3.0" layoutY="1.0" prefHeight="530.0" prefWidth="890.0">
          <columns>
             <TableColumn fx:id="tableNumberColumn" prefWidth="210.3999969959259" text="Table Number" />
             <TableColumn fx:id="capacityColumn" prefWidth="186.3999786376953" text="Capacity " />
