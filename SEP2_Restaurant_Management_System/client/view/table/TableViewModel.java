@@ -164,6 +164,9 @@ public class TableViewModel implements PropertyChangeListener {
             errorLabel.set("No reservation found for table " + tableNumber + ".");
         }
     }
+    public void remove(){
+        tablemodel.remove
+    }
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
