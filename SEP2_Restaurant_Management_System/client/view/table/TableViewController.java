@@ -35,17 +35,28 @@ public class TableViewController implements ViewController {
     private ViewHandler viewHandler;
     private TableViewModel tableViewModel;
 
-
-
     public void init(ViewModelFactory viewModelFactory, ViewHandler viewHandler) {
         this.viewHandler = viewHandler;
         this.tableViewModel = viewModelFactory.getTableViewModel();
-
 
         tableView.setItems(tableViewModel.getTableList());
         tableNumberColumn.setCellValueFactory(cellData -> cellData.getValue().getTableNumberProperty());
         capacityColumn.setCellValueFactory(cellData -> cellData.getValue().getCapacityProperty());
         statusColumn.setCellValueFactory(cellData -> cellData.getValue().getStatusProperty());
+
+        // Set up cell factory for status column
+        statusColumn.setCellFactory(column -> new TableCell<SimpleTableViewModel, Boolean>() {
+            @Override
+            protected void updateItem(Boolean item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                } else {
+                    setText(item ? "Occupied" : "Vacant");
+                }
+            }
+        });
+
         //errorLabel.textProperty().bind(tableViewModel.getErrorProperty());
 
         tableViewModel.setSelected(null);
@@ -59,21 +70,19 @@ public class TableViewController implements ViewController {
             }
         });
     }
+
     @FXML
     private void deleteTableButton(ActionEvent event) {
         tableViewModel.remove();
     }
 
-
     @FXML
-    private void clearSelectedTableButton(ActionEvent event) { // Corrected method signature
+    private void clearSelectedTableButton(ActionEvent event) {
         tableView.getSelectionModel().clearSelection();
     }
 
     @FXML
-    private void addNewTableButton(ActionEvent event) { // Corrected method signature
+    private void addNewTableButton(ActionEvent event) {
         tableViewModel.addNewTable();
     }
-
-
 }

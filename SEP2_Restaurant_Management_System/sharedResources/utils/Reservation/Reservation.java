@@ -1,9 +1,9 @@
 package sharedResources.utils.Reservation;
+
 import client.model.Reservation.ReservationList;
 import sharedResources.utils.Customer.Customer;
 import sharedResources.utils.table.Table;
 import utility.observer.javaobserver.UnnamedPropertyChangeSubject;
-
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -43,7 +43,7 @@ public class Reservation implements UnnamedPropertyChangeSubject {
                 reservationList.addReservation(this);
                 // Mark the table as reserved
                 boolean oldOccupied = table.isOccupied();
-                table.occupyTable();
+                table.occupyTable(customer); // Pass customer when occupying table
                 property.firePropertyChange("reservationStatus", oldOccupied, table.isOccupied());
             } else {
                 System.out.println("Customer details do not match the reservation.");

@@ -1,5 +1,6 @@
 package client.model.table;
 
+import sharedResources.utils.Customer.Customer;
 import sharedResources.utils.table.Table;
 
 import java.beans.PropertyChangeListener;
@@ -43,11 +44,11 @@ public class TableList implements PropertyChangeListener {
     }
 
     // Method to update the status of a table
-    public void updateTable(int tableNumber, boolean isOccupied) {
+    public void updateTable(int tableNumber, boolean isOccupied, Customer customer) {
         for (Table table : tables) {
             if (table.getTableNumber() == tableNumber) {
                 if (isOccupied) {
-                    table.occupyTable();
+                    table.occupyTable(customer); // Pass customer when occupying table
                 } else {
                     table.vacateTable();
                 }

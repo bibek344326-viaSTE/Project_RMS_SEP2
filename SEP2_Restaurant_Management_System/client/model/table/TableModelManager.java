@@ -1,6 +1,7 @@
 package client.model.table;
 
 import client.mediator.table.TableClient;
+import sharedResources.utils.Customer.Customer;
 import sharedResources.utils.table.Table;
 
 import java.beans.PropertyChangeListener;
@@ -20,14 +21,12 @@ public class TableModelManager implements TableModel {
         createDummyData();
     }
 
-
-
-        // TODO : change all the method from table list to table server and move table list to server section
-        private void createDummyData() {
-         tableList.add(new Table(1, 4));
-         tableList.add(new Table(2, 5));
-         tableList.add(new Table(3, 7));
-        }
+    // Method to create dummy data
+    private void createDummyData() {
+        tableList.createTable(1, 4);
+        tableList.createTable(2, 5);
+        tableList.createTable(3, 7);
+    }
 
     @Override
     public void createTable(int tableNumber, int capacity) {
@@ -43,7 +42,7 @@ public class TableModelManager implements TableModel {
 
     @Override
     public void updateTable(int tableNumber, boolean isOccupied) {
-        tableList.updateTable(tableNumber, isOccupied);
+        tableList.updateTable(tableNumber, isOccupied, null); // Pass null for customer
         property.firePropertyChange("TableUpdated", tableNumber, isOccupied);
     }
 
@@ -53,8 +52,9 @@ public class TableModelManager implements TableModel {
     }
 
     @Override
-    public Table getTableByNumber(int tableNumber) {return tableList.getTableByNumber(tableNumber);}
-
+    public Table getTableByNumber(int tableNumber) {
+        return tableList.getTableByNumber(tableNumber);
+    }
 
     @Override
     public ArrayList<Table> getAllTables() {
@@ -66,8 +66,6 @@ public class TableModelManager implements TableModel {
         return tableList.getVacantTables();
     }
 
-
-
     @Override
     public void addListener(PropertyChangeListener listener) {
         property.addPropertyChangeListener(listener);
@@ -77,6 +75,5 @@ public class TableModelManager implements TableModel {
     public void removeListener(PropertyChangeListener listener) {
         property.removePropertyChangeListener(listener);
     }
-
 
 }
